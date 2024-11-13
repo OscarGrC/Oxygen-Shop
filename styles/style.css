@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+.header {
+  width: 100%;
+  height: auto;
+}
+.header__navbar {
+  width: 100%;
+  height: auto;
+  margin: 1%;
+  margin-left: 0px;
+  align-items: justify;
+  box-shadow: 0px 2px 3px rgba(65, 64, 64, 0.5);
+}
+.header__navbar__element {
+  display: inline-block;
+  margin-left: 5%;
+}
+.header__navbar__element--second {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+
+.openingSection {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 15%;
+  width: 100%;
+  height: auto;
+}
+.openingSection__header {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+.openingSection__content {
+  margin-top: 4%;
+}
+.openingSection__button {
+  margin-top: 8%;
+  padding: 4%;
+  border-radius: 40px;
+  width: 60%;
+  max-width: 250px;
+  background-color: #08A6E4;
+  color: White;
+  font-weight: bold;
+  border: none;
+  box-shadow: 5px 2px 6px #07ACE6;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.image {
+  overflow: hidden;
+  margin-top: 10%;
+}
+.image__content {
+  width: 195%;
+  height: auto;
+  transform: translate(-25%, 0%);
+}
+
+.mostPopular {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+}
+.mostPopular__header {
+  color: black;
+  font-size: 1.8em;
+}
+.mostPopular__element {
+  margin-top: 7%;
+  position: relative;
+}
+.mostPopular__element__img--person {
+  left: 50%;
+  position: absolute;
+  background: transparent;
+}
+.mostPopular__element__img--eye {
+  left: 47.5%;
+  top: 9.5%;
+  position: absolute;
+  background: transparent;
+}
+.mostPopular__element__img--papers {
+  left: 49%;
+  top: 4.5%;
+  position: absolute;
+  background: transparent;
+}
+.mostPopular__element__count {
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+.mostPopular__element__text {
+  margin-top: 3%;
+  color: gray;
+  font-size: 1.2em;
+}
+
+body {
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 240, 240);
+}/*# sourceMappingURL=style.css.map */

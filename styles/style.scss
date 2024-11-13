@@ -1,0 +1,16 @@
+@import '_globalVariables.scss';
+@import 'header.scss';
+@import '_openingSection.scss';
+@import '_image.scss';
+@import '_mostPopular.scss';
+
+body {
+    min-width: 320px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $backgroundPrimaryColor;
+}

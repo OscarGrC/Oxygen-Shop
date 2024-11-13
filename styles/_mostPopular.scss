@@ -1,0 +1,52 @@
+@import 'globalVariables.scss';
+
+
+.mostPopular {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    font-family: $alternativeTextFont;
+
+    &__header {
+        color: $defaultColorText;
+        font-size: 1.8em;
+    }
+
+    &__element {
+        margin-top: 7%;
+        position: relative;
+
+        &__img--person {
+            left: 50%;
+            position: absolute;
+            background: transparent;
+        }
+
+        &__img--eye {
+            left: 47.5%;
+            top: 9.5%;
+            position: absolute;
+            background: transparent;
+        }
+
+        &__img--papers {
+            left: 49%;
+            top: 4.5%;
+            position: absolute;
+            background: transparent;
+        }
+
+        &__count {
+            margin-top: 2%;
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+
+        &__text {
+            margin-top: 3%;
+            color: gray;
+            font-size: 1.2em;
+
+        }
+    }
+}

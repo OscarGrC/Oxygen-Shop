@@ -1,0 +1,10 @@
+.image {
+    overflow: hidden;
+    margin-top: 10%;
+
+    &__content {
+        width: 195%;
+        height: auto;
+        transform: translate(-25%, -0%)
+    }
+}
