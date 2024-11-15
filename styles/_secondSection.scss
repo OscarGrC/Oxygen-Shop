@@ -1,0 +1,119 @@
+@import '_globalVariables.scss';
+
+.secondSection {
+    background-color: rgb(212, 210, 210);
+    color: $defaultColorText;
+    font-family: $alternativeTextFont;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    padding-top: 1%;
+    padding-bottom: 9%;
+
+
+    &__element {
+        margin-top: 10%;
+        background-color: $backgroundPrimaryColor;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        &__img--pc {
+            background: transparent;
+            margin-top: 15%;
+            width: 65%;
+            z-index: 2;
+            display: inline-block;
+            position: relative;
+
+        }
+
+        &__img--ellipseRed {
+            background: transparent;
+            position: relative;
+            left: 17%;
+            top: -130px;
+            z-index: 1;
+            display: inline-block;
+
+        }
+
+        &__title {
+            margin-top: -50%;
+            margin-right: 22%;
+            font-size: 1.7em;
+            text-align: left;
+            margin-left: 5%;
+
+
+        }
+
+        &__title--last {
+            margin-top: 2%;
+            margin-right: 20%;
+            margin-left: 5%;
+            font-size: 1.7em;
+            text-align: left;
+        }
+
+
+        &__text {
+            margin-top: 2%;
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 2%;
+            margin-top: 8%;
+            font-size: 0.75em;
+            padding-bottom: 5%;
+        }
+
+        &__text--last {
+            margin-top: 2%;
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 2%;
+            margin-top: 8%;
+            font-size: 0.9em;
+            padding-bottom: 5%;
+        }
+
+
+
+
+        &__img--phone {
+            margin-top: 5%;
+            z-index: 2;
+            position: relative;
+            background: transparent;
+        }
+
+        &__img--ellipseBlue {
+            background: transparent;
+            position: relative;
+            z-index: 1;
+            top: -140px;
+        }
+
+
+        &__img--rectangle {
+            background: transparent;
+            position: absolute;
+            left: 14%;
+            top: 520%;
+            width: 117%;
+            height: 36%;
+            z-index: 1;
+
+        }
+
+        &__img--trumpet {
+            z-index: 2;
+            width: 100%;
+            margin-top: 18%;
+            margin-bottom: -18%;
+            right: 5%;
+            height: auto;
+            position: relative;
+            background: transparent;
+        }
+    }
+}

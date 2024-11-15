@@ -1,0 +1,89 @@
+@import 'globalVariables.scss';
+
+//Elemento padre
+.pricing {
+    font-family: $alternativeTextFont;
+    text-align: center;
+
+    //titulo
+    &__title {
+        font-size: 1.7em;
+    }
+
+    //Caja 
+    &__pricingBox {
+        margin: 10%;
+        border: 1px solid $pricingPink;
+        border-radius: 18px;
+        overflow: hidden;
+        align-items: center;
+        margin-bottom: 15%;
+
+        //contenido izquierdo
+        &__leftContent {
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+
+            margin: 1%;
+            margin-bottom: 15%;
+            margin-top: 15%;
+            margin-left: 2%;
+            margin-right: 5%;
+
+
+            &__name {
+
+                font-weight: bold;
+                font-size: 1em;
+            }
+
+            &__price {
+                font-size: 2em;
+                color: $pricingPink;
+            }
+
+            &__footer {
+                font-size: 0.7em;
+                ;
+            }
+        }
+
+        //tabla
+        &__rightContent {
+            display: inline-block;
+            table-layout: fixed;
+            border-collapse: collapse;
+            font-size: 0.8em;
+
+            margin-top: 5%;
+
+
+            text-align: left;
+
+            .td {
+                margin: 20px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        //boton
+        &__button {
+            display: block;
+            position: absolute;
+            margin-top: -8%;
+            left: 45%;
+            padding: 4%;
+            border-radius: 18px;
+            width: 60%;
+            max-width: 120px;
+            background-color: $pricingPink;
+            color: $alternativeColorText;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+    }
+}

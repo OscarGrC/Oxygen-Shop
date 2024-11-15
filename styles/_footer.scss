@@ -1,0 +1,28 @@
+.footerPage {
+
+    &__logoContainer {
+        display: inline-block;
+
+
+        &__logo {
+            width: 50%;
+            height: auto;
+
+        }
+
+        &__licent {
+            font-size: 0.6em;
+            display: block;
+        }
+    }
+
+    &__iconX {
+        display: inline-block;
+        scale: 20%;
+    }
+
+    &__iconFace {
+        display: inline-block;
+
+    }
+}

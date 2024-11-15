@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 .header {
   width: 100%;
   height: auto;
@@ -106,6 +109,280 @@
   margin-top: 3%;
   color: gray;
   font-size: 1.2em;
+}
+
+.secondSection {
+  background-color: rgb(212, 210, 210);
+  color: black;
+  font-family: "Raleway", sans-serif;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  padding-top: 1%;
+  padding-bottom: 9%;
+}
+.secondSection__element {
+  margin-top: 10%;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.secondSection__element__img--pc {
+  background: transparent;
+  margin-top: 15%;
+  width: 65%;
+  z-index: 2;
+  display: inline-block;
+  position: relative;
+}
+.secondSection__element__img--ellipseRed {
+  background: transparent;
+  position: relative;
+  left: 17%;
+  top: -130px;
+  z-index: 1;
+  display: inline-block;
+}
+.secondSection__element__title {
+  margin-top: -50%;
+  margin-right: 22%;
+  font-size: 1.7em;
+  text-align: left;
+  margin-left: 5%;
+}
+.secondSection__element__title--last {
+  margin-top: 2%;
+  margin-right: 20%;
+  margin-left: 5%;
+  font-size: 1.7em;
+  text-align: left;
+}
+.secondSection__element__text {
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-top: 8%;
+  font-size: 0.75em;
+  padding-bottom: 5%;
+}
+.secondSection__element__text--last {
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-top: 8%;
+  font-size: 0.9em;
+  padding-bottom: 5%;
+}
+.secondSection__element__img--phone {
+  margin-top: 5%;
+  z-index: 2;
+  position: relative;
+  background: transparent;
+}
+.secondSection__element__img--ellipseBlue {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  top: -140px;
+}
+.secondSection__element__img--rectangle {
+  background: transparent;
+  position: absolute;
+  left: 14%;
+  top: 520%;
+  width: 117%;
+  height: 36%;
+  z-index: 1;
+}
+.secondSection__element__img--trumpet {
+  z-index: 2;
+  width: 100%;
+  margin-top: 18%;
+  margin-bottom: -18%;
+  right: 5%;
+  height: auto;
+  position: relative;
+  background: transparent;
+}
+
+.pricing {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.pricing__title {
+  font-size: 1.7em;
+}
+.pricing__pricingBox {
+  margin: 10%;
+  border: 1px solid #EB476E;
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 15%;
+}
+.pricing__pricingBox__leftContent {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 1%;
+  margin-bottom: 15%;
+  margin-top: 15%;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+.pricing__pricingBox__leftContent__name {
+  font-weight: bold;
+  font-size: 1em;
+}
+.pricing__pricingBox__leftContent__price {
+  font-size: 2em;
+  color: #EB476E;
+}
+.pricing__pricingBox__leftContent__footer {
+  font-size: 0.7em;
+}
+.pricing__pricingBox__rightContent {
+  display: inline-block;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.8em;
+  margin-top: 5%;
+  text-align: left;
+}
+.pricing__pricingBox__rightContent .td {
+  margin: 20px;
+  text-transform: uppercase;
+}
+.pricing__pricingBox__button {
+  display: block;
+  position: absolute;
+  margin-top: -8%;
+  left: 45%;
+  padding: 4%;
+  border-radius: 18px;
+  width: 60%;
+  max-width: 120px;
+  background-color: #EB476E;
+  color: White;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form {
+  margin-top: 10%;
+  margin-left: 7%;
+  font-family: "Open Sans", sans-serif;
+}
+.form__title {
+  font-size: 2.2em;
+  font-family: "Raleway", sans-serif;
+}
+.form__subTitle {
+  font-size: 0.8em;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10%;
+}
+.form__contactLine {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.form__contactLine__text {
+  display: inline-block;
+  color: gray;
+}
+.form__inputLine {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.form__inputLine__inputName {
+  margin-top: 8%;
+  margin-bottom: 1%;
+  color: #08A6E4;
+  font-size: 0.8em;
+}
+.form__inputLine__inputUserName {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 90%;
+}
+.form__inputLine__inputUserEmail {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 90%;
+}
+.form__consent {
+  position: relative;
+  margin-bottom: 10%;
+}
+.form__consent__checkbox {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid gray;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.form__consent__checkbox:checked {
+  background-color: transparent;
+}
+.form__consent__checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-50deg) scaleX(-1);
+  width: 7px;
+  height: 3px;
+  border: solid #08A6E4;
+  border-width: 0 1px 1px 0;
+}
+.form__consent__text {
+  color: gray;
+  text-align: left;
+  margin-left: 7%;
+  margin-right: 11%;
+  font-size: 0.7em;
+}
+.form__button {
+  margin-left: 30%;
+  margin-top: 8%;
+  margin-bottom: 15%;
+  padding: 4%;
+  border-radius: 40px;
+  width: 60%;
+  max-width: 250px;
+  background-color: #08A6E4;
+  color: White;
+  font-weight: bold;
+  border: none;
+  box-shadow: 5px 2px 6px #07ACE6;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footerPage__logoContainer {
+  display: inline-block;
+}
+.footerPage__logoContainer__logo {
+  width: 50%;
+  height: auto;
+}
+.footerPage__logoContainer__licent {
+  font-size: 0.6em;
+  display: block;
+}
+.footerPage__iconX {
+  display: inline-block;
+  scale: 20%;
+}
+.footerPage__iconFace {
+  display: inline-block;
 }
 
 body {
