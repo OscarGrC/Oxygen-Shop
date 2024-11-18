@@ -9,7 +9,11 @@
 
     &__header {
         color: $defaultColorText;
-        font-size: 1.8em;
+        font-size: 2em;
+        line-height: 1.5;
+        height: 3em;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     &__element {
@@ -47,6 +51,14 @@
             color: gray;
             font-size: 1.2em;
 
+        }
+
+        @media only screen and (min-width:1000px) {
+            display: inline-block;
+            margin-top: 1%;
+            vertical-align: top;
+            margin-right: 10%;
+            margin-left: 10%;
         }
     }
 }

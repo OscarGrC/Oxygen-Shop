@@ -15,15 +15,60 @@
         &__element {
             display: inline-block;
             margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            width: 60%;
+            max-width: 300px;
+
 
             &--second {
                 display: inline-block;
                 cursor: pointer;
                 position: absolute;
+                width: 5%;
                 right: 5%;
                 top: 3%;
+
+                @media only screen and (min-width:1000px) {
+                    visibility: hidden;
+                }
             }
         }
 
+    }
+
+    .openingSection {
+        font-family: $defaultTextFont;
+        color: $defaultColorText;
+        text-align: center;
+        margin-top: 18%;
+        width: 100%;
+        height: auto;
+
+        &__header {
+            font-family: $alternativeTextFont;
+            font-size: 2.5rem;
+        }
+
+        &__content {
+            margin-top: 4%;
+            font-size: 1.2rem;
+        }
+
+        &__button {
+            margin-top: 8%;
+            padding: 4%;
+            border-radius: 40px;
+            width: 80%;
+            min-height: 75px;
+            max-width: 450px;
+            background-color: $button-color;
+            color: $alternativeColorText;
+            font-weight: bold;
+            border: none;
+            box-shadow: 10px 6px 16px #07ACE6;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
     }
 }

@@ -16,42 +16,43 @@
         text-align: center;
         margin-left: 10%;
         margin-right: 10%;
+        position: relative;
 
         &__img--pc {
             background: transparent;
-            margin-top: 15%;
-            width: 65%;
+            margin-top: 12%;
+            width: 60%;
+            left: 20%;
+            align-items: center;
             z-index: 2;
             display: inline-block;
-            position: relative;
+            position: absolute;
 
         }
 
         &__img--ellipseRed {
             background: transparent;
-            position: relative;
-            left: 17%;
-            top: -130px;
+            position: absolute;
+            left: 50%;
+            top: 0em;
             z-index: 1;
             display: inline-block;
 
         }
 
         &__title {
-            margin-top: -50%;
-            margin-right: 22%;
-            font-size: 1.7em;
+            padding-top: 5em;
+            margin-top: 1em;
+            font-size: 2em;
             text-align: left;
-            margin-left: 5%;
-
-
+            padding-left: 5%;
         }
 
         &__title--last {
             margin-top: 2%;
             margin-right: 20%;
             margin-left: 5%;
-            font-size: 1.7em;
+            font-size: 2em;
             text-align: left;
         }
 
@@ -96,11 +97,9 @@
 
         &__img--rectangle {
             background: transparent;
-            position: absolute;
-            left: 14%;
-            top: 520%;
-            width: 117%;
-            height: 36%;
+            position: relative;
+            width: 100%;
+            margin-top: -14em;
             z-index: 1;
 
         }
@@ -108,7 +107,7 @@
         &__img--trumpet {
             z-index: 2;
             width: 100%;
-            margin-top: 18%;
+            margin-top: 9%;
             margin-bottom: -18%;
             right: 5%;
             height: auto;

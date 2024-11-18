@@ -2,10 +2,12 @@
 
     &__logoContainer {
         display: inline-block;
-
+        margin-right: -3em;
+        margin-left: 1em;
+        margin-bottom: 1em;
 
         &__logo {
-            width: 50%;
+            width: 70%;
             height: auto;
 
         }
@@ -16,13 +18,24 @@
         }
     }
 
-    &__iconX {
-        display: inline-block;
-        scale: 20%;
-    }
-
-    &__iconFace {
+    &__icons {
         display: inline-block;
 
+        &__iconX {
+            display: inline;
+            scale: 20%;
+
+            bottom: 5%;
+            right: 0%;
+
+        }
+
+        &__iconFace {
+            display: inline;
+            position: relative;
+            margin-bottom: 0.3em;
+            margin-left: 8em;
+        }
     }
+
 }
