@@ -6,21 +6,54 @@
     margin-left: 7%;
     font-family: $defaultTextFont;
 
+    @media only screen and (min-width:1000px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
 
     &__title {
         font-size: 2.2em;
+        max-width: 300px;
         font-family: $alternativeTextFont;
+
+        @media only screen and (min-width:1000px) {
+            grid-column: 1;
+            grid-row: 1;
+            z-index: 1;
+        }
     }
 
     &__subTitle {
         font-size: 0.8em;
         font-family: $alternativeTextFont;
         margin-bottom: 10%;
+        max-width: 300px;
+
+        @media only screen and (min-width:1000px) {
+            @media only screen and (min-width:1000px) {
+                grid-column: 1;
+                grid-row: 1;
+                z-index: 2;
+                margin-top: 4em;
+            }
+        }
     }
 
     &__contactLine {
         margin-top: 2%;
         margin-bottom: 2%;
+
+        @media only screen and (min-width:1000px) {
+            grid-column: 1;
+            grid-row: 2;
+            z-index: 3;
+            margin-top: -2em;
+
+        }
+
+
 
         &__text {
             display: inline-block;
@@ -32,21 +65,40 @@
         margin-top: 8%;
         margin-bottom: 8%;
 
+
+        @media only screen and (min-width:1000px) {
+            grid-column: 2;
+            grid-row: 1;
+            z-index: 1;
+            margin-top: -2.5em;
+            margin-bottom: 0em;
+            vertical-align: top;
+        }
+
+
         &__inputName {
+            width: 500px;
             margin-top: 8%;
             margin-bottom: 1%;
             color: $button-color;
             font-size: 0.8em;
+
+            @media only screen and (min-width:1000px) {
+                margin-top: 1em;
+            }
         }
 
         &__inputUserName {
             border: none;
             border-bottom: 1px solid gray;
             width: 90%;
+
+
         }
 
         &__inputUserEmail {
             border: none;
+            width: 500px;
             border-bottom: 1px solid gray;
             width: 90%;
         }
@@ -55,6 +107,13 @@
     &__consent {
         position: relative;
         margin-bottom: 10%;
+
+        @media only screen and (min-width:1000px) {
+            grid-column: 2;
+            grid-row: 3;
+            margin-top: 2em;
+
+        }
 
         &__checkbox {
             position: absolute;
@@ -82,11 +141,6 @@
             }
         }
 
-
-
-
-
-
         &__text {
             color: gray;
             text-align: left;
@@ -112,5 +166,26 @@
         box-shadow: 5px 2px 6px #07ACE6;
         font-size: 1rem;
         cursor: pointer;
+
+        @media only screen and (min-width:1000px) {
+            grid-column: 2;
+            grid-row: 4;
+            margin-top: -1em;
+        }
     }
+
+    .--secondLine {
+        @media only screen and (min-width:1000px) {
+            margin-left: 12em;
+            z-index: 24
+        }
+    }
+
+    .--secondInput {
+        @media only screen and (min-width:1000px) {
+            grid-row: 2;
+        }
+    }
+
+
 }

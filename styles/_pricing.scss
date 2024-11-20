@@ -20,6 +20,10 @@
     //titulo
     &__title {
         font-size: 1.7em;
+
+        @media only screen and (min-width:1000px) {
+            margin-top: 100px;
+        }
     }
 
     //Caja 
@@ -28,23 +32,32 @@
         @include borderColor($pricingPink);
         border-radius: 18px;
         overflow: hidden;
+        max-width: 300px;
         align-items: center;
         margin-bottom: 15%;
-        position: relative;
+
+        @media only screen and (min-width:1000px) {
+            display: inline-block;
+            overflow: visible;
+            margin-right: 1%;
+            margin-left: 2%;
+            height: 350PX;
+            width: 270PX;
+        }
 
         //contenido izquierdo
         &__leftContent {
             display: inline-block;
             text-align: center;
             vertical-align: top;
-            margin: 1%;
-            margin-top: 20%;
-            margin-left: 2%;
+            padding-top: 4em;
 
+            @media only screen and (min-width:1000px) {
+                display: block;
 
+            }
 
             &__name {
-
                 font-weight: bold;
                 font-size: 1.2em;
             }
@@ -67,11 +80,9 @@
             margin-top: 5%;
             margin-left: 2%;
             align-items: end;
-
             text-align: left;
 
             &__line {
-
                 margin: 1em;
 
                 &__img {
@@ -90,24 +101,28 @@
                     }
                 }
             }
-
         }
 
         //boton
         &__button {
             display: block;
             position: absolute;
-            margin-top: -8%;
-            left: 30%;
-            padding: 4%;
-            border-radius: 18px;
-            width: 70%;
-            max-width: 150px;
+            margin-top: -1em;
+            left: 7em;
+            padding: 1.5em;
+            border-radius: 28px;
+            width: 150px;
+            height: 30px;
             @include buttonColor($pricingPink);
             color: $alternativeColorText;
             border: none;
             font-size: 1rem;
             cursor: pointer;
+
+            @media only screen and (min-width:1000px) {
+                position: relative;
+                left: 25%;
+            }
         }
 
     }

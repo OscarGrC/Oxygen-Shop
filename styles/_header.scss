@@ -35,6 +35,42 @@
             }
         }
 
+        &__list {
+            visibility: hidden;
+            display: inline-block;
+            margin-left: 8em;
+            margin-bottom: 2px;
+            font-family: $alternativeTextFont;
+            color: gray;
+            position: absolute;
+            right: 5%;
+
+            top: 14%;
+
+            &__element {
+                display: inline;
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+
+            @media only screen and (min-width:1000px) {
+                visibility: visible;
+            }
+
+            &__elementOne {
+                display: inline;
+                margin-left: 2em;
+                margin-right: 2em;
+                border-bottom: 3px solid $button-color;
+                color: black;
+                padding-bottom: 4em;
+
+            }
+
+
+
+        }
+
     }
 
     .openingSection {

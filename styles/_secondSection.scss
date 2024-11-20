@@ -9,6 +9,12 @@
     padding-top: 1%;
     padding-bottom: 9%;
 
+    @media only screen and (min-width:1000px) {
+        margin-bottom: 0%;
+        padding-bottom: 2%;
+        margin-top: 2%;
+    }
+
 
     &__element {
         margin-top: 10%;
@@ -18,25 +24,39 @@
         margin-right: 10%;
         position: relative;
 
+        @media only screen and (min-width:1000px) {
+            height: 200px;
+            margin-top: 2%;
+        }
+
+
         &__img--pc {
             background: transparent;
-            margin-top: 12%;
-            width: 60%;
+            margin-top: 2em;
+            text-align: center;
             left: 20%;
-            align-items: center;
             z-index: 2;
             display: inline-block;
             position: absolute;
+
+            @media only screen and (min-width:1000px) {
+                left: 60%;
+                margin-top: 3em;
+            }
 
         }
 
         &__img--ellipseRed {
             background: transparent;
             position: absolute;
-            left: 50%;
-            top: 0em;
+            left: 45%;
             z-index: 1;
-            display: inline-block;
+
+            @media only screen and (min-width:1000px) {
+                left: 72%;
+                margin-top: 1em;
+            }
+
 
         }
 
@@ -45,15 +65,26 @@
             margin-top: 1em;
             font-size: 2em;
             text-align: left;
-            padding-left: 5%;
+            margin-left: 5%;
+            max-width: 250px;
+
+            @media only screen and (min-width:1000px) {
+                padding-top: 1em;
+                max-width: 300px;
+            }
         }
 
         &__title--last {
             margin-top: 2%;
-            margin-right: 20%;
             margin-left: 5%;
             font-size: 2em;
             text-align: left;
+            max-width: 260px;
+
+            @media only screen and (min-width:1000px) {
+                padding-top: 1em;
+                max-width: 350px;
+            }
         }
 
 
@@ -65,6 +96,47 @@
             margin-top: 8%;
             font-size: 0.75em;
             padding-bottom: 5%;
+            max-width: 260px;
+
+            @media only screen and (min-width:1000px) {
+                margin-top: 1em;
+                max-width: 300px;
+                padding-bottom: 0%;
+
+            }
+        }
+
+        &__line {
+            margin-left: 5%;
+            margin-right: 2%;
+
+            @media only screen and (min-width:1000px) {
+                margin-top: 1em;
+                max-width: 240px;
+                border-bottom: 2px solid $pricingPink;
+            }
+        }
+
+        &__line--blue {
+            margin-left: 5%;
+            margin-right: 2%;
+
+            @media only screen and (min-width:1000px) {
+                margin-top: 1em;
+                max-width: 240px;
+                border-bottom: 2px solid $button-color;
+            }
+        }
+
+        &__line--green {
+            margin-left: 5%;
+            margin-right: 2%;
+
+            @media only screen and (min-width:1000px) {
+                margin-top: 1em;
+                max-width: 240px;
+                border-bottom: 2px solid $pricingGreen
+            }
         }
 
         &__text--last {
@@ -73,8 +145,15 @@
             margin-left: 5%;
             margin-right: 2%;
             margin-top: 8%;
-            font-size: 0.9em;
-            padding-bottom: 5%;
+            font-size: 0.75em;
+            padding-bottom: 200px;
+            max-width: 260px;
+
+            @media only screen and (min-width:1000px) {
+                margin-top: 1em;
+                max-width: 300px;
+                padding-bottom: 0%;
+            }
         }
 
 
@@ -82,37 +161,69 @@
 
         &__img--phone {
             margin-top: 5%;
+            left: 30%;
             z-index: 2;
-            position: relative;
+            position: absolute;
             background: transparent;
+
+            @media only screen and (min-width:1000px) {
+                left: 10%;
+            }
         }
 
         &__img--ellipseBlue {
             background: transparent;
-            position: relative;
+            position: absolute;
+            left: 30%;
             z-index: 1;
-            top: -140px;
+            margin-top: 1em;
+
+            @media only screen and (min-width:1000px) {
+                left: 10%;
+                top: 10%;
+            }
         }
 
 
         &__img--rectangle {
             background: transparent;
-            position: relative;
+            position: absolute;
+            left: 0%;
+            top: 55%;
             width: 100%;
-            margin-top: -14em;
             z-index: 1;
+            max-height: 200px;
 
+            @media only screen and (min-width:1000px) {
+                width: 40%;
+                left: 60%;
+                top: 0%;
+            }
         }
 
         &__img--trumpet {
             z-index: 2;
-            width: 100%;
-            margin-top: 9%;
-            margin-bottom: -18%;
-            right: 5%;
-            height: auto;
-            position: relative;
+            width: 80%;
+            max-width: 300px;
+            margin-left: -7.5em;
+            top: 65%;
+            position: absolute;
             background: transparent;
+
+            @media only screen and (min-width:1000px) {
+                width: 25%;
+                left: 80%;
+                top: 20%;
+            }
         }
     }
+
+    .--second {
+        @media only screen and (min-width:1000px) {
+            margin-left: 470px;
+
+
+        }
+    }
+
 }
