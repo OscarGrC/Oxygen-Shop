@@ -1,60 +1,55 @@
 @import 'globalVariables.scss';
 
-@mixin borderColor($color: black) {
-    border: 1px solid $color;
-}
-
-@mixin buttonColor($color: black) {
-    background-color: $color;
-}
-
-@mixin textColor($color: black) {
-    color: $color;
-}
-
 //Elemento padre
 .pricing {
     font-family: $alternativeTextFont;
-    text-align: center;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
 
     //titulo
     &__title {
+        text-align: center;
         font-size: 1.7em;
+        padding-bottom: 0.5em;
 
         @media only screen and (min-width:1000px) {
-            margin-top: 100px;
+            padding-top: 100px;
         }
     }
 
     //Caja 
     &__pricingBox {
-        margin: 10%;
-        @include borderColor($pricingPink);
+
+        margin-bottom: 5em;
+        border: 1px solid $pricingPink;
         border-radius: 18px;
-        overflow: hidden;
-        max-width: 300px;
-        align-items: center;
-        margin-bottom: 15%;
+        position: relative;
+        overflow: visible;
+
+        &--blue {
+            border: 1px solid $button-color;
+        }
+
+        &--green {
+            border: 1px solid $pricingGreen;
+        }
 
         @media only screen and (min-width:1000px) {
             display: inline-block;
-            overflow: visible;
-            margin-right: 1%;
-            margin-left: 2%;
-            height: 350PX;
-            width: 270PX;
         }
 
         //contenido izquierdo
         &__leftContent {
             display: inline-block;
-            text-align: center;
             vertical-align: top;
             padding-top: 4em;
+            text-align: center;
+            min-width: 150px;
+
+
 
             @media only screen and (min-width:1000px) {
                 display: block;
-
             }
 
             &__name {
@@ -65,6 +60,14 @@
             &__price {
                 font-size: 2.5em;
                 color: $pricingPink;
+
+                &--blue {
+                    color: $button-color;
+                }
+
+                &--green {
+                    color: $pricingGreen;
+                }
             }
 
             &__footer {
@@ -77,10 +80,10 @@
         &__rightContent {
             display: inline-block;
             font-size: 0.8em;
-            margin-top: 5%;
-            margin-left: 2%;
+            padding-top: 1em;
             align-items: end;
             text-align: left;
+
 
             &__line {
                 margin: 1em;
@@ -95,8 +98,6 @@
                     margin-left: 1em;
 
                     &--last {
-                        display: inline-block;
-                        margin-left: 1em;
                         padding-bottom: 3em;
                     }
                 }
@@ -105,15 +106,15 @@
 
         //boton
         &__button {
-            display: block;
+
             position: absolute;
-            margin-top: -1em;
-            left: 7em;
+            bottom: -15%;
+            left: 30%;
             padding: 1.5em;
+            padding-left: 3em;
+            padding-right: 3em;
             border-radius: 28px;
-            width: 150px;
-            height: 30px;
-            @include buttonColor($pricingPink);
+            background-color: $pricingPink;
             color: $alternativeColorText;
             border: none;
             font-size: 1rem;
@@ -123,31 +124,17 @@
                 position: relative;
                 left: 25%;
             }
+
+            &--blue {
+                background-color: $button-color;
+            }
+
+            &--green {
+                background-color: $pricingGreen;
+            }
         }
 
     }
 
-    .--second {
-        @include borderColor($button-color);
-    }
 
-    .--second--button {
-        @include buttonColor($button-color);
-    }
-
-    .--second--price {
-        @include textColor($button-color);
-    }
-
-    .--last {
-        @include borderColor($pricingGreen);
-    }
-
-    .--last--button {
-        @include buttonColor($pricingGreen);
-    }
-
-    .--last--price {
-        @include textColor($pricingGreen);
-    }
 }
