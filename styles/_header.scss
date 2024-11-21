@@ -29,7 +29,7 @@
             color: gray;
             position: absolute;
             right: 5%;
-            top: 2em;
+            top: 1em;
 
             &__element {
                 display: inline;
@@ -40,7 +40,7 @@
                     border-bottom: 3px solid $button-color;
                     color: black;
                     font-weight: bold;
-                    padding-bottom: 1.5em;
+                    padding-bottom: 1em;
 
                 }
             }
