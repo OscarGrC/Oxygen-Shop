@@ -18,6 +18,7 @@
             margin-left: 10em;
             margin-right: 10em;
             margin-bottom: 3em;
+            text-align: left;
         }
 
         &__imgContainer {
@@ -32,6 +33,15 @@
                 @media only screen and (min-width:1000px) {
                     position: absolute;
                     left: 0%;
+                }
+            }
+
+            &--last {
+                @media only screen and (min-width:1000px) {
+                    display: inline-block;
+
+                    text-align: right;
+                    background: transparent;
                 }
             }
 
@@ -64,7 +74,8 @@
                 background: transparent;
 
                 @media only screen and (min-width:1000px) {
-                    left: 0%;
+                    left: 8%;
+                    position: absolute;
                 }
             }
 
@@ -88,7 +99,12 @@
                 width: 100%;
 
 
-                @media only screen and (min-width:1000px) {}
+                @media only screen and (min-width:1000px) {
+                    right: -40%;
+                    top: -20%;
+                    height: 300px;
+                    width: 300px;
+                }
             }
 
             &--trumpet {
@@ -99,11 +115,30 @@
                 position: absolute;
                 background: transparent;
 
-                @media only screen and (min-width:1000px) {}
+                @media only screen and (min-width:1000px) {
+                    top: 30%;
+                    left: 50%;
+
+                }
             }
         }
 
         &__textContainer {
+            padding-bottom: 2em;
+
+            &--second {
+                @media only screen and (min-width:1000px) {
+                    padding-left: 25em;
+                }
+            }
+
+            &--last {
+                @media only screen and (min-width:1000px) {
+                    display: inline-block;
+                    padding-top: 2em;
+
+                }
+            }
 
             &__title {
                 padding-top: 0.5em;
@@ -116,6 +151,8 @@
                     padding-top: 1em;
                     max-width: 300px;
                 }
+
+
 
                 &--last {
                     padding-top: 2%;
@@ -157,18 +194,20 @@
                     margin-left: 2.2em;
                     max-width: 240px;
                     border-bottom: 2px solid $pricingPink;
+
                 }
 
                 &--blue {
                     @media only screen and (min-width:1000px) {
                         border-bottom: 2px solid $button-color;
-                        margin-left: 500px;
+
                     }
                 }
 
                 &--green {
                     @media only screen and (min-width:1000px) {
-                        border-bottom: 2px solid $pricingGreen
+                        border-bottom: 2px solid $pricingGreen;
+
                     }
                 }
             }

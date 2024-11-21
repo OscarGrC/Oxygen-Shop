@@ -6,27 +6,63 @@
     padding-left: 1.8em;
     padding-right: 1.8em;
 
+
+    &__container {
+        @media only screen and (min-width:1000px) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+    }
+
     //titulo
     &__title {
         text-align: center;
         font-size: 1.7em;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.7em;
 
         @media only screen and (min-width:1000px) {
             padding-top: 100px;
+
         }
     }
 
     //Caja 
+    &__pricingBoxContainer {
+        position: relative;
+        overflow: visible;
+
+        @media only screen and (min-width:1000px) {
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    }
+
+    &__pricingBoxContainer:hover {
+        @media only screen and (min-width:1000px) {
+            transform: scale(1.1);
+        }
+
+    }
+
+    &__pricingBox:hover {
+
+        @media only screen and (min-width:1000px) {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
     &__pricingBox {
 
         margin-bottom: 5em;
         border: 1px solid $pricingPink;
         border-radius: 18px;
-        position: relative;
-        overflow: visible;
+
+        overflow: hidden;
 
         &--blue {
+
             border: 1px solid $button-color;
         }
 
@@ -36,6 +72,8 @@
 
         @media only screen and (min-width:1000px) {
             display: inline-block;
+            margin-left: 0.5em;
+            margin-right: 1em;
         }
 
         //contenido izquierdo
@@ -60,13 +98,16 @@
             &__price {
                 font-size: 2.5em;
                 color: $pricingPink;
+                padding-bottom: 0.3em;
 
                 &--blue {
                     color: $button-color;
+                    padding-bottom: 0em;
                 }
 
                 &--green {
                     color: $pricingGreen;
+                    padding-bottom: 0em;
                 }
             }
 
@@ -84,6 +125,12 @@
             align-items: end;
             text-align: left;
 
+            @media only screen and (min-width:1000px) {
+                //  text-align: center;
+
+                padding-left: 5em;
+                padding-right: 5em;
+            }
 
             &__line {
                 margin: 1em;
@@ -121,8 +168,8 @@
             cursor: pointer;
 
             @media only screen and (min-width:1000px) {
-                position: relative;
-                left: 25%;
+                bottom: 12%;
+                left: 30%;
             }
 
             &--blue {

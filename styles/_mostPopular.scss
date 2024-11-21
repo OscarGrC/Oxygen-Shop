@@ -21,7 +21,7 @@
     }
 
     &__element {
-        padding-top: 12%;
+        padding-top: 8%;
 
         &__imgContainer {
             position: relative;
@@ -67,9 +67,10 @@
             display: inline-block;
             margin-top: 1%;
             vertical-align: top;
-            margin-right: 5.2em;
-            margin-left: 5.2em;
+            margin-right: 5em;
+            margin-left: 5em;
             padding-bottom: 2em;
+            font-size: 0.9em;
         }
     }
 }

@@ -35,7 +35,6 @@
         <img class="image__content" src="resources/Background.png" alt="dropdown icon" />
     </section>
 
-
     <!--Parrafo mas populares -->
     <section class="mostPopular">
         <p class="mostPopular__header">The most popular sales platform in country</p>
@@ -65,7 +64,6 @@
         </article>
     </section>
 
-
     <!--Segundo parrafo imagen text -->
     <section class="secondSection">
         <article class="secondSection__element">
@@ -81,7 +79,7 @@
                     eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <p class="secondSection__element__line"></p>
+                <p class="secondSection__element__textContainer__line"></p>
             </div>
 
         </article>
@@ -93,7 +91,7 @@
                 <img class="secondSection__element__imgContainer--ellipseBlue" src="resources/BigEllipseBlue.png"
                     alt="first element">
             </div>
-            <div class="secondSection__element__textContainer">
+            <div class="secondSection__element__textContainer secondSection__element__textContainer--second">
                 <p class="secondSection__element__textContainer__title --second">Your shop is where you are!</p>
                 <p class="secondSection__element__textContainer__text --second ">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
@@ -108,7 +106,7 @@
         </article>
 
         <article class="secondSection__element">
-            <div class="secondSection__element__textContainer">
+            <div class="secondSection__element__textContainer secondSection__element__textContainer--last">
                 <p
                     class="secondSection__element__textContainer__title secondSection__element__textContainer__title--last">
                     Increase recognition your
@@ -120,136 +118,156 @@
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <p
-                    class="secondSection__element__textContainer__line secondSection__element__textContainer__textContainer__line--green">
+                    class="secondSection__element__textContainer__line secondSection__element__textContainer__line--green">
                 </p>
             </div>
-            <div class="secondSection__element__imgContainer">
+            <div class="secondSection__element__imgContainer secondSection__element__imgContainer--last">
                 <img class="secondSection__element__imgContainer--trumpet" src="resources/Trumpet.png"
                     alt="second element">
                 <img class="secondSection__element__imgContainer--rectangle" src="resources/RectangleGreen.png"
                     alt="first element">
             </div>
         </article>
-
     </section>
-
 
     <!--Pricing-->
     <section class="pricing">
         <p class="pricing__title">Pricing</p>
-        <article class="pricing__pricingBox">
-            <aside class="pricing__pricingBox__leftContent">
-                <p class="pricing__pricingBox__leftContent__name">Basic</p>
-                <p class="pricing__pricingBox__leftContent__price">$0</p>
-            </aside>
-            <div class="pricing__pricingBox__rightContent">
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">100 MB HDD</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">1 Subdomain</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">2 E-mails</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Cross.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">Two years license</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Cross.png"></img>
-                    <p
-                        class="pricing__pricingBox__rightContent__line__p pricing__pricingBox__rightContent__line__p--last">
-                        Full support</p>
-                </div>
+        <div class="pricing__container">
+            <div class="pricing__pricingBoxContainer">
+                <article class="pricing__pricingBox">
+                    <aside class="pricing__pricingBox__leftContent">
+                        <p class="pricing__pricingBox__leftContent__name">Basic</p>
+                        <p class="pricing__pricingBox__leftContent__price">$0</p>
+                    </aside>
+                    <div class="pricing__pricingBox__rightContent">
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">100 MB HDD</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">1 Subdomain</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">2 E-mails</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img" src="resources/Cross.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">Two years license</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img" src="resources/Cross.png"></img>
+                            <p
+                                class="pricing__pricingBox__rightContent__line__p pricing__pricingBox__rightContent__line__p--last">
+                                Full support</p>
+                        </div>
+                    </div>
+                    <button class="pricing__pricingBox__button">Begin</button>
+                </article>
             </div>
-            <button class="pricing__pricingBox__button">Begin</button>
-        </article>
-
-        <article class="pricing__pricingBox pricing__pricingBox--blue">
-            <aside class="pricing__pricingBox__leftContent">
-                <p class="pricing__pricingBox__leftContent__name">Professional</p>
-                <p class="pricing__pricingBox__leftContent__price pricing__pricingBox__leftContent__price--blue">$25</p>
-                <footer class="pricing__pricingBox__leftContent__footer">Limited offer</footer>
-
-            </aside>
-            <div class="pricing__pricingBox__rightContent">
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">500 MB HDD</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">2 Subdomains</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">5 E-mails</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">One years license</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Cross.png"></img>
-                    <p
-                        class="pricing__pricingBox__rightContent__line__p pricing__pricingBox__rightContent__line__p--last">
-                        Full support</p>
-                </div>
+            <div class="pricing__pricingBoxContainer">
+                <article class="pricing__pricingBox pricing__pricingBox--blue">
+                    <aside class="pricing__pricingBox__leftContent">
+                        <p class="pricing__pricingBox__leftContent__name">Professional</p>
+                        <p
+                            class="pricing__pricingBox__leftContent__price pricing__pricingBox__leftContent__price--blue">
+                            $25
+                        </p>
+                        <footer class="pricing__pricingBox__leftContent__footer">Limited offer</footer>
+                    </aside>
+                    <div class="pricing__pricingBox__rightContent">
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">500 MB HDD</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">2 Subdomains</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">5 E-mails</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">One years license</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img" src="resources/Cross.png"></img>
+                            <p
+                                class="pricing__pricingBox__rightContent__line__p pricing__pricingBox__rightContent__line__p--last">
+                                Full support</p>
+                        </div>
+                    </div>
+                    <button class="pricing__pricingBox__button pricing__pricingBox__button--blue">Begin</button>
+                </article>
             </div>
-            <button class="pricing__pricingBox__button pricing__pricingBox__button--blue">Begin</button>
-        </article>
+            <div class="pricing__pricingBoxContainer">
+                <article class="pricing__pricingBox pricing__pricingBox--green">
+                    <aside class="pricing__pricingBox__leftContent">
+                        <p class="pricing__pricingBox__leftContent__name">Premiun</p>
+                        <p
+                            class="pricing__pricingBox__leftContent__price pricing__pricingBox__leftContent__price--green">
+                            $60
+                        </p>
+                        <footer class="pricing__pricingBox__leftContent__footer">Limited offer</footer>
+                    </aside>
+                    <div class="pricing__pricingBox__rightContent">
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">2 GB HDD</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">5 Subdomains</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">20 E-mails</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p class="pricing__pricingBox__rightContent__line__p">Two years license</p>
+                        </div>
+                        <div class="pricing__pricingBox__rightContent__line">
+                            <img class="pricing__pricingBox__rightContent__line__img"
+                                src="resources/Checkbox.png"></img>
+                            <p
+                                class="pricing__pricingBox__rightContent__line__p pricing__pricingBox__rightContent__line__p--last">
+                                Full support</p>
+                        </div>
+                    </div>
+                    <button class="pricing__pricingBox__button pricing__pricingBox__button--green">Begin</button>
+                </article>
 
-        <article class="pricing__pricingBox pricing__pricingBox--green">
-            <aside class="pricing__pricingBox__leftContent">
-                <p class="pricing__pricingBox__leftContent__name">Premiun</p>
-                <p class="pricing__pricingBox__leftContent__price pricing__pricingBox__leftContent__price--green">$60
-                </p>
-                <footer class="pricing__pricingBox__leftContent__footer">Limited offer</footer>
-            </aside>
-            <div class="pricing__pricingBox__rightContent">
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">2 GB HDD</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">5 Subdomains</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">20 E-mails</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p class="pricing__pricingBox__rightContent__line__p">Two years license</p>
-                </div>
-                <div class="pricing__pricingBox__rightContent__line">
-                    <img class="pricing__pricingBox__rightContent__line__img" src="resources/Checkbox.png"></img>
-                    <p
-                        class="pricing__pricingBox__rightContent__line__p pricing__pricingBox__rightContent__line__p--last">
-                        Full support</p>
-                </div>
             </div>
-            <button class="pricing__pricingBox__button pricing__pricingBox__button--green">Begin</button>
-        </article>
+
+        </div>
     </section>
-
 
     <!--Formulario-->
     <section class="form">
         <p class="form__title">Any question?</p>
-
         <p class="form__subTitle">Leave your email address or call us!</p>
 
         <div class="form__contactLine">
             <img src="resources/MailIcon.png" />
             <p class="form__contactLine__text">info@bestshop.xyz</p>
         </div>
-        <div class="form__contactLine --secondLine">
+        <div class="form__contactLine form__contactLine--secondLine">
             <img src="resources/PhoneIcon.png" />
             <p class="form__contactLine__text">123 456 789</p>
         </div>
@@ -258,7 +276,7 @@
             <p class="form__inputLine__inputName">NAME</p>
             <input class="form__inputLine__inputUserName">
         </div>
-        <div class="form__inputLine --secondInput">
+        <div class="form__inputLine form__inputLine--secondInput">
             <p class="form__inputLine__inputName">EMAIL</p>
             <input class="form__inputLine__inputUserEmail">
         </div>
@@ -270,23 +288,24 @@
                 the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
                 and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
         </div>
-        <button class="form__button">Send</button>
+        <div class="form__buttonContainer">
+            <button class="form__buttonContainer__button">Send</button>
+        </div>
+
     </section>
-    <!--Footer-->
-    <footer class="footerPage">
-        <div class="footerPage__logoContainer">
-            <img class="footerPage__logoContainer__logo" src="resources/Logo.png">
-            <p class="footerPage__logoContainer__licent">© 2022 OXYGEN, All Rights Reserved</p>
-        </div>
-        <div class="footerPage__icons">
-            <img class="footerPage__icons__iconX" src="">
-            <img class="footerPage__icons__iconFace" src="resources/Facebook.png">
-
-        </div>
-
-    </footer>
-
 </body>
+<!--Footer-->
+<footer class="footerPage">
+    <div class="footerPage__logoContainer">
+        <img class="footerPage__logoContainer__logo" src="resources/Logo.png">
+        <p class="footerPage__logoContainer__licent">© 2022 OXYGEN, All Rights Reserved</p>
+    </div>
+    <div class="footerPage__icons">
+        <img class="footerPage__icons__iconX" src="">
+        <img class="footerPage__icons__iconFace" src="resources/Facebook.png">
 
+    </div>
+
+</footer>
 
 </html>

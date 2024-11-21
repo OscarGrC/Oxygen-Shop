@@ -1,6 +1,6 @@
 .image {
     overflow: hidden;
-    padding-top: 3em;
+    padding-top: 2em;
 
     &__content {
         width: 195%;
@@ -10,7 +10,7 @@
 
     @media only screen and (min-width:1000px) {
         &__content {
-            width: 130%;
+            width: 135%;
             height: auto;
         }
     }

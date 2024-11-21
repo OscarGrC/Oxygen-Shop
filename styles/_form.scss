@@ -4,12 +4,17 @@
 .form {
     padding-top: 1em;
     padding-left: 2em;
+    padding-bottom: 1em;
     font-family: $defaultTextFont;
+    position: relative;
 
     @media only screen and (min-width:1000px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-rows: 3.5em 2em 1fr;
+        grid-template-columns: 25em 35em;
+        padding-left: 2em;
+        justify-content: center;
 
     }
 
@@ -21,6 +26,7 @@
             grid-column: 1;
             grid-row: 1;
             z-index: 1;
+
         }
     }
 
@@ -33,9 +39,9 @@
         @media only screen and (min-width:1000px) {
             @media only screen and (min-width:1000px) {
                 grid-column: 1;
-                grid-row: 1;
+                grid-row: 2;
                 z-index: 2;
-                margin-top: 4em;
+
             }
         }
     }
@@ -43,16 +49,16 @@
     &__contactLine {
         padding-top: 1em;
 
-
         @media only screen and (min-width:1000px) {
             grid-column: 1;
-            grid-row: 2;
-            z-index: 3;
-            margin-top: -2em;
-
+            grid-row: 3;
         }
 
-
+        &--secondLine {
+            @media only screen and (min-width:1000px) {
+                margin-left: 12em;
+            }
+        }
 
         &__text {
             display: inline-block;
@@ -69,11 +75,15 @@
             grid-column: 2;
             grid-row: 1;
             z-index: 1;
-            margin-top: -2.5em;
-            margin-bottom: 0em;
+            padding: 0%;
             vertical-align: top;
         }
 
+        &--secondInput {
+            @media only screen and (min-width:1000px) {
+                grid-row: 3;
+            }
+        }
 
         &__inputName {
             padding-top: 3em;
@@ -82,7 +92,8 @@
             font-size: 0.8em;
 
             @media only screen and (min-width:1000px) {
-                margin-top: 1em;
+                padding: 0%;
+                padding-bottom: 1em;
             }
         }
 
@@ -103,13 +114,13 @@
     }
 
     &__consent {
-        position: relative;
+
         padding-bottom: 2em;
 
         @media only screen and (min-width:1000px) {
             grid-column: 2;
-            grid-row: 3;
-            margin-top: 2em;
+            grid-row: 4;
+            padding-top: 2em;
 
         }
 
@@ -144,46 +155,55 @@
             text-align: left;
             padding-left: 2em;
             padding-right: 4em;
+            padding-bottom: 6em;
             font-size: 0.7em;
+
+            @media only screen and (min-width:1000px) {
+                font-size: 0.9em;
+                padding-bottom: 0em;
+                padding-right: 2em;
+            }
 
         }
     }
 
-    &__button {
-        margin-left: 30%;
-        margin-top: 8%;
-        margin-bottom: 15%;
-        padding: 4%;
-        border-radius: 40px;
-        width: 60%;
-        max-width: 250px;
-        background-color: $button-color;
-        color: $alternativeColorText;
-        font-weight: bold;
-        border: none;
-        box-shadow: 5px 2px 6px #07ACE6;
-        font-size: 1rem;
-        cursor: pointer;
+    &__buttonContainer {
+        position: relative;
 
         @media only screen and (min-width:1000px) {
             grid-column: 2;
-            grid-row: 4;
-            margin-top: -1em;
+            grid-row: 5;
+            text-align: right;
+
+        }
+
+        &__button {
+            position: absolute;
+            right: 10%;
+            bottom: 5%;
+            padding: 1em;
+            padding-left: 4em;
+            padding-right: 4em;
+            border-radius: 40px;
+
+            max-width: 250px;
+            background-color: $button-color;
+            color: $alternativeColorText;
+            font-weight: bold;
+            border: none;
+            box-shadow: 5px 2px 6px #07ACE6;
+            font-size: 1rem;
+            cursor: pointer;
+
+            @media only screen and (min-width:1000px) {
+                position: relative;
+                padding-left: 5em;
+                padding-right: 5em;
+                text-align: right;
+
+
+            }
         }
     }
-
-    .--secondLine {
-        @media only screen and (min-width:1000px) {
-            margin-left: 12em;
-            z-index: 24
-        }
-    }
-
-    .--secondInput {
-        @media only screen and (min-width:1000px) {
-            grid-row: 2;
-        }
-    }
-
 
 }

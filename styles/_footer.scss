@@ -1,10 +1,13 @@
 .footerPage {
+    position: relative;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
 
     &__logoContainer {
         display: inline-block;
-        margin-right: -3em;
-        margin-left: 1em;
-        margin-bottom: 1em;
+        padding-top: 0.5em;
+        padding-left: 1em;
+        padding-bottom: 1em;
+
 
         &__logo {
             width: 70%;
@@ -21,10 +24,11 @@
     &__icons {
         display: inline-block;
 
+
         &__iconX {
             display: inline;
             scale: 20%;
-
+            position: absolute;
             bottom: 5%;
             right: 0%;
 
@@ -32,9 +36,9 @@
 
         &__iconFace {
             display: inline;
-            position: relative;
-            margin-bottom: 0.3em;
-            margin-left: 8em;
+            position: absolute;
+            right: 10%;
+            top: 20%;
         }
     }
 
