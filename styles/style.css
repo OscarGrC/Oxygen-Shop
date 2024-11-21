@@ -219,6 +219,7 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--phone {
     left: 8%;
+    top: 10%;
     position: absolute;
   }
 }
