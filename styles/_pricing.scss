@@ -74,6 +74,9 @@
             display: inline-block;
             margin-left: 0.5em;
             margin-right: 1em;
+            padding-left: 4em;
+            padding-right: 4em;
+            padding-bottom: 0.5em;
         }
 
         //contenido izquierdo
@@ -98,7 +101,7 @@
             &__price {
                 font-size: 2.5em;
                 color: $pricingPink;
-                padding-bottom: 0.3em;
+                padding-bottom: 0.6em;
 
                 &--blue {
                     color: $button-color;
@@ -125,12 +128,6 @@
             align-items: end;
             text-align: left;
 
-            @media only screen and (min-width:1000px) {
-                //  text-align: center;
-
-                padding-left: 5em;
-                padding-right: 5em;
-            }
 
             &__line {
                 margin: 1em;
@@ -157,9 +154,10 @@
             position: absolute;
             bottom: -15%;
             left: 30%;
-            padding: 1.5em;
-            padding-left: 3em;
-            padding-right: 3em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 3.8em;
+            padding-right: 3.8em;
             border-radius: 28px;
             background-color: $pricingPink;
             color: $alternativeColorText;
@@ -168,8 +166,8 @@
             cursor: pointer;
 
             @media only screen and (min-width:1000px) {
-                bottom: 12%;
-                left: 30%;
+                bottom: 13%;
+                left: 22%;
             }
 
             &--blue {
