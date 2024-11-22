@@ -12,13 +12,19 @@
     <!--Barra de navegacion-->
     <header class="header">
         <nav class="header__navbar">
+            <div class="header__navbar__progressBarContainer">
+                <div class="header__navbar__progressBarContainer__progressBar"></div>
+            </div>
             <img class="header__navbar__element" src="resources/Logo.png" alt="Logo of company" />
             <img class="header__navbar__element--second" src="resources/Menu.png" alt="dropdown icon" />
             <div class="header__navbar__list">
-                <p class="header__navbar__list__element header__navbar__list__element--first">WHY US</p>
-                <p class="header__navbar__list__element">BENEFITS</p>
-                <p class="header__navbar__list__element">PRICES</p>
-                <p class="header__navbar__list__element">CONTACT</p>
+                <ul class="header__navbar__list__ul">
+                    <li class="header__navbar__list__element header__navbar__list__element--first">WHY US</li>
+                    <li class="header__navbar__list__element">BENEFITS</li>
+                    <li class="header__navbar__list__element">PRICES</li>
+                    <li class="header__navbar__list__element">CONTACT</li>
+                </ul>
+
             </div>
         </nav>
         <!--Seccion de apertura para ir a tu tienda-->
@@ -293,6 +299,12 @@
         </div>
 
     </section>
+    <!--ReturnTopButton-->
+    <button id="goToTop" class="goToTop">
+        <img class="goToTop__img" src="resources/up.png" alt="Subir" />
+    </button>
+    <!--Script-->
+    <script src="js/index.js"></script>
 </body>
 <!--Footer-->
 <footer class="footerPage">
