@@ -6,6 +6,14 @@
     padding-top: 2em;
     padding-bottom: 2em;
 
+    @media only screen and (min-width:1000px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 1000px;
+        padding-top: 5em;
+    }
+
     &__element {
         position: relative;
         background-color: $backgroundPrimaryColor;
@@ -18,34 +26,21 @@
             margin-left: 10em;
             margin-right: 10em;
             margin-bottom: 3em;
-            text-align: left;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &--last {
+            @media only screen and (min-width:1000px) {
+
+                flex-direction: row;
+
+            }
         }
 
         &__imgContainer {
             position: relative;
-
-            @media only screen and (min-width:1000px) {
-                position: absolute;
-                right: 20%;
-            }
-
-            &--second {
-                @media only screen and (min-width:1000px) {
-                    position: absolute;
-                    left: 0%;
-                }
-            }
-
-            &--last {
-                @media only screen and (min-width:1000px) {
-                    display: inline-block;
-
-                    text-align: right;
-                    background: transparent;
-                }
-            }
-
-
 
             &--pc {
                 background: transparent;
@@ -56,6 +51,9 @@
 
                 @media only screen and (min-width:1000px) {
                     scale: 1.5;
+                    padding-top: 0em;
+                    top: 30%;
+                    left: -10%;
                 }
             }
 
@@ -67,7 +65,7 @@
 
                 @media only screen and (min-width:1000px) {
                     scale: 1.5;
-                    left: 60%;
+                    left: 50%;
                 }
             }
 
@@ -80,7 +78,7 @@
 
                 @media only screen and (min-width:1000px) {
                     scale: 1.5;
-                    left: 8%;
+                    left: 14%;
                     top: 10%;
                     position: absolute;
                 }
@@ -94,7 +92,7 @@
                 margin-top: 1em;
 
                 @media only screen and (min-width:1000px) {
-                    left: 6%;
+                    left: 12%;
                     top: 10%;
                     scale: 1.5;
                 }
@@ -108,10 +106,10 @@
 
 
                 @media only screen and (min-width:1000px) {
-                    right: -40%;
-                    top: -20%;
-                    height: 300px;
-                    width: 300px;
+                    left: 10%;
+                    top: 0%;
+                    height: 280px;
+                    width: 280px;
                 }
             }
 
@@ -125,8 +123,7 @@
 
                 @media only screen and (min-width:1000px) {
                     top: 30%;
-                    left: 50%;
-
+                    left: 15%;
                 }
             }
         }
@@ -144,7 +141,6 @@
                 @media only screen and (min-width:1000px) {
                     display: inline-block;
                     padding-top: 2em;
-
                 }
             }
 
@@ -159,8 +155,6 @@
                     padding-top: 1em;
                     max-width: 300px;
                 }
-
-
 
                 &--last {
                     padding-top: 2%;
@@ -183,7 +177,7 @@
 
                 @media only screen and (min-width:1000px) {
                     margin-top: 1em;
-                    max-width: 300px;
+                    max-width: 270px;
                     padding-bottom: 0%;
                 }
 
@@ -195,36 +189,26 @@
 
             &__line {
 
-
                 @media only screen and (min-width:1000px) {
                     padding-top: 0.5em;
                     margin-bottom: 1em;
                     margin-left: 2.2em;
                     max-width: 240px;
                     border-bottom: 2px solid $pricingPink;
-
                 }
 
                 &--blue {
                     @media only screen and (min-width:1000px) {
                         border-bottom: 2px solid $button-color;
-
                     }
                 }
 
                 &--green {
                     @media only screen and (min-width:1000px) {
                         border-bottom: 2px solid $pricingGreen;
-
                     }
                 }
             }
         }
-
-
-
     }
-
-
-
 }

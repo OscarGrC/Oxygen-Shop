@@ -217,6 +217,15 @@
   padding-top: 2em;
   padding-bottom: 2em;
 }
+@media only screen and (min-width: 1000px) {
+  .secondSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1000px;
+    padding-top: 5em;
+  }
+}
 .secondSection__element {
   position: relative;
   background-color: rgb(240, 240, 240);
@@ -230,30 +239,18 @@
     margin-left: 10em;
     margin-right: 10em;
     margin-bottom: 3em;
-    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .secondSection__element--last {
+    flex-direction: row;
   }
 }
 .secondSection__element__imgContainer {
   position: relative;
-}
-@media only screen and (min-width: 1000px) {
-  .secondSection__element__imgContainer {
-    position: absolute;
-    right: 20%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .secondSection__element__imgContainer--second {
-    position: absolute;
-    left: 0%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .secondSection__element__imgContainer--last {
-    display: inline-block;
-    text-align: right;
-    background: transparent;
-  }
 }
 .secondSection__element__imgContainer--pc {
   background: transparent;
@@ -265,6 +262,9 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--pc {
     scale: 1.5;
+    padding-top: 0em;
+    top: 30%;
+    left: -10%;
   }
 }
 .secondSection__element__imgContainer--ellipseRed {
@@ -276,7 +276,7 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--ellipseRed {
     scale: 1.5;
-    left: 60%;
+    left: 50%;
   }
 }
 .secondSection__element__imgContainer--phone {
@@ -289,7 +289,7 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--phone {
     scale: 1.5;
-    left: 8%;
+    left: 14%;
     top: 10%;
     position: absolute;
   }
@@ -303,7 +303,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--ellipseBlue {
-    left: 6%;
+    left: 12%;
     top: 10%;
     scale: 1.5;
   }
@@ -316,10 +316,10 @@
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--rectangle {
-    right: -40%;
-    top: -20%;
-    height: 300px;
-    width: 300px;
+    left: 10%;
+    top: 0%;
+    height: 280px;
+    width: 280px;
   }
 }
 .secondSection__element__imgContainer--trumpet {
@@ -333,7 +333,7 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--trumpet {
     top: 30%;
-    left: 50%;
+    left: 15%;
   }
 }
 .secondSection__element__textContainer {
@@ -384,7 +384,7 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__text {
     margin-top: 1em;
-    max-width: 300px;
+    max-width: 270px;
     padding-bottom: 0%;
   }
 }
