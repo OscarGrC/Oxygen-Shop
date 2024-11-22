@@ -8,10 +8,11 @@
 
     @media only screen and (min-width:1000px) {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         max-width: 1000px;
         padding-top: 5em;
+        margin: 0 auto;
+
     }
 
     &__element {
