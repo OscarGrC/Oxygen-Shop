@@ -621,6 +621,12 @@
   padding-top: 1em;
   padding-bottom: 2em;
 }
+.form__inputLine__error {
+  visibility: hidden;
+  color: red;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+}
 @media only screen and (min-width: 1000px) {
   .form__inputLine {
     grid-column: 2;

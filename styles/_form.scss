@@ -70,6 +70,12 @@
         padding-top: 1em;
         padding-bottom: 2em;
 
+        &__error {
+            visibility: hidden;
+            color: red;
+            font-family: $alternativeTextFont;
+            font-size: 0.8em;
+        }
 
         @media only screen and (min-width:1000px) {
             grid-column: 2;

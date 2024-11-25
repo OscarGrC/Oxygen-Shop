@@ -281,10 +281,12 @@
         <div class="form_inputLine">
             <p class="form__inputLine__inputName">NAME</p>
             <input class="form__inputLine__inputUserName">
+            <p class="form__inputLine__error form__inputLine__error--name">La longitud tiene que ser de 2 a 100</p>
         </div>
         <div class="form__inputLine form__inputLine--secondInput">
             <p class="form__inputLine__inputName">EMAIL</p>
             <input class="form__inputLine__inputUserEmail">
+            <p class="form__inputLine__error form__inputLine__error--email">Correo incorrecto</p>
         </div>
         <div class="form__consent">
             <input type="checkbox" class="form__consent__checkbox">
@@ -295,7 +297,7 @@
                 and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
         </div>
         <div class="form__buttonContainer">
-            <button class="form__buttonContainer__button">Send</button>
+            <button class="form__buttonContainer__button" id="formButton">Send</button>
         </div>
 
     </section>
@@ -304,7 +306,7 @@
         <img class="goToTop__img" src="resources/up.png" alt="Subir" />
     </button>
     <!--Script-->
-    <script src="js/index.js"></script>
+    <!--  <script src="js/index.js"></script> -->
 </body>
 <!--Footer-->
 <footer class="footerPage">
