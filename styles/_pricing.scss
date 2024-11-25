@@ -135,6 +135,10 @@
             font-weight: 400;
             margin-top: 1.5em;
 
+            @media only screen and (min-width:1000px) {
+                text-align: center;
+            }
+
             &__line {
                 margin: 1em;
 

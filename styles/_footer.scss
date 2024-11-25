@@ -17,6 +17,7 @@
 
         &__licent {
             font-size: 0.6em;
+            color: gray;
             display: block;
         }
     }
@@ -27,18 +28,17 @@
 
         &__iconX {
             display: inline;
-            scale: 20%;
             position: absolute;
-            bottom: 5%;
-            right: 0%;
+            right: 8%;
+            top: 30%;
 
         }
 
         &__iconFace {
             display: inline;
             position: absolute;
-            right: 10%;
-            top: 20%;
+            right: 5%;
+            top: 30%;
         }
     }
 

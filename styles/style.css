@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 .header__navbar {
   padding: 1em;
   box-shadow: 0px 2px 3px rgba(65, 64, 64, 0.5);
@@ -541,6 +541,11 @@
   font-weight: 400;
   margin-top: 1.5em;
 }
+@media only screen and (min-width: 1000px) {
+  .pricing__pricingBox__rightContent {
+    text-align: center;
+  }
+}
 .pricing__pricingBox__rightContent__line {
   margin: 1em;
 }
@@ -624,6 +629,7 @@
 }
 .form__contactLine {
   padding-top: 1em;
+  font-family: "Open Sans", sans-serif;
 }
 @media only screen and (min-width: 1000px) {
   .form__contactLine {
@@ -634,6 +640,12 @@
 @media only screen and (min-width: 1000px) {
   .form__contactLine--secondLine {
     margin-left: 12em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .form__contactLine__img {
+    position: relative;
+    top: 15%;
   }
 }
 .form__contactLine__text {
@@ -668,7 +680,9 @@
   padding-top: 3em;
   padding-bottom: 2em;
   color: #08A6E4;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.4em;
 }
 @media only screen and (min-width: 1000px) {
   .form__inputLine__inputName {
@@ -788,6 +802,7 @@
 }
 .footerPage__logoContainer__licent {
   font-size: 0.6em;
+  color: gray;
   display: block;
 }
 .footerPage__icons {
@@ -795,16 +810,15 @@
 }
 .footerPage__icons__iconX {
   display: inline;
-  scale: 20%;
   position: absolute;
-  bottom: 5%;
-  right: 0%;
+  right: 8%;
+  top: 30%;
 }
 .footerPage__icons__iconFace {
   display: inline;
   position: absolute;
-  right: 10%;
-  top: 20%;
+  right: 5%;
+  top: 30%;
 }
 
 .goToTop {
