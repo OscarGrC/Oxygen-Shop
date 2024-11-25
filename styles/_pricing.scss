@@ -6,13 +6,12 @@
     padding-left: 1.8em;
     padding-right: 1.8em;
 
-
     &__container {
         @media only screen and (min-width:1000px) {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
     }
@@ -21,7 +20,7 @@
     &__title {
         text-align: center;
         font-size: 1.7em;
-        padding-bottom: 0.7em;
+        margin-bottom: 1em;
 
         @media only screen and (min-width:1000px) {
             padding-top: 100px;
@@ -75,8 +74,8 @@
             display: inline-block;
             margin-left: 0.5em;
             margin-right: 1em;
-            padding-left: 4em;
-            padding-right: 4em;
+            padding-left: 5em;
+            padding-right: 5em;
             padding-bottom: 0.5em;
         }
 
@@ -84,9 +83,9 @@
         &__leftContent {
             display: inline-block;
             vertical-align: top;
-            padding-top: 4em;
+            margin-top: 2em;
             text-align: center;
-            min-width: 150px;
+            min-width: 130px;
 
 
 
@@ -97,12 +96,16 @@
             &__name {
                 font-weight: bold;
                 font-size: 1.2em;
+                margin-bottom: 1em;
             }
 
             &__price {
-                font-size: 2.5em;
+                font-size: 2.875em;
+                font-weight: 300;
+                margin-bottom: 0.2em;
                 color: $pricingPink;
-                padding-bottom: 0.6em;
+                padding-bottom: 0.3em;
+                font-family: $defaultTextFont;
 
                 &--blue {
                     color: $button-color;
@@ -116,19 +119,21 @@
             }
 
             &__footer {
-                font-size: 0.7em;
-                ;
+                font-size: 0.75em;
+                font-weight: 700;
+                line-height: 0.875em;
             }
         }
 
         //tabla
         &__rightContent {
             display: inline-block;
-            font-size: 0.8em;
-            padding-top: 1em;
+            font-size: 0.875em;
+            padding-top: 1.2em;
             align-items: end;
             text-align: left;
-
+            font-weight: 400;
+            margin-top: 1.5em;
 
             &__line {
                 margin: 1em;
@@ -154,7 +159,7 @@
 
             position: absolute;
             bottom: -15%;
-            left: 30%;
+            left: 40%;
             padding-top: 1em;
             padding-bottom: 1em;
             padding-left: 3.8em;
@@ -168,7 +173,7 @@
 
             @media only screen and (min-width:1000px) {
                 bottom: 13%;
-                left: 22%;
+                left: 25%;
             }
 
             &--blue {

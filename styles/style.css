@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 .header__navbar {
   padding: 1em;
   box-shadow: 0px 2px 3px rgba(65, 64, 64, 0.5);
@@ -92,11 +98,11 @@
 }
 .header .openingSection__header {
   font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .header .openingSection__content {
-  padding-top: 4%;
-  font-size: 1.2rem;
+  margin-top: 2em;
+  font-size: 1rem;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -116,7 +122,9 @@
   font-weight: bold;
   border: none;
   box-shadow: 10px 6px 16px #07ACE6;
-  font-size: 1.2rem;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.2em;
   cursor: pointer;
 }
 @media only screen and (min-width: 1000px) {
@@ -155,8 +163,9 @@
 }
 .mostPopular__header {
   color: black;
-  font-size: 2em;
-  line-height: 1.2em;
+  font-size: 2.25em;
+  font-weight: 400;
+  line-height: 2.6em;
 }
 .mostPopular__element {
   padding-top: 8%;
@@ -216,13 +225,12 @@
   font-family: "Raleway", sans-serif;
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: #ffffff;
+  background-color: rgba(247, 247, 247, 0.968627451);
 }
 @media only screen and (min-width: 1000px) {
   .secondSection {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
     padding-top: 5em;
     margin: 0 auto;
   }
@@ -237,9 +245,11 @@
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3em;
+    width: 1000px;
+    height: 280px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -264,8 +274,8 @@
   .secondSection__element__imgContainer--pc {
     scale: 1.5;
     padding-top: 0em;
-    top: 30%;
-    left: -10%;
+    top: 35%;
+    left: -70%;
   }
 }
 .secondSection__element__imgContainer--ellipseRed {
@@ -277,7 +287,8 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--ellipseRed {
     scale: 1.5;
-    left: 50%;
+    left: -10%;
+    top: 5%;
   }
 }
 .secondSection__element__imgContainer--phone {
@@ -289,9 +300,9 @@
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--phone {
-    scale: 1.5;
+    scale: 2;
     left: 14%;
-    top: 10%;
+    top: 20%;
     position: absolute;
   }
 }
@@ -305,8 +316,8 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--ellipseBlue {
     left: 12%;
-    top: 10%;
-    scale: 1.5;
+    top: 20%;
+    scale: 2;
   }
 }
 .secondSection__element__imgContainer--rectangle {
@@ -318,9 +329,8 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--rectangle {
     left: 10%;
-    top: 0%;
     height: 280px;
-    width: 280px;
+    width: 380px;
   }
 }
 .secondSection__element__imgContainer--trumpet {
@@ -334,7 +344,13 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--trumpet {
     top: 30%;
-    left: 15%;
+    left: 25%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .secondSection__element__imgContainer--last {
+    background-color: rgba(247, 247, 247, 0.968627451);
+    width: 50%;
   }
 }
 .secondSection__element__textContainer {
@@ -342,7 +358,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer--second {
-    padding-left: 25em;
+    padding-left: 30em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -353,9 +369,9 @@
 }
 .secondSection__element__textContainer__title {
   padding-top: 0.5em;
-  font-size: 2em;
+  font-size: 2.25em;
   text-align: left;
-  padding-left: 1.2em;
+  padding-left: 0.9em;
   max-width: 300px;
 }
 @media only screen and (min-width: 1000px) {
@@ -374,8 +390,8 @@
   }
 }
 .secondSection__element__textContainer__text {
-  padding-top: 1.5em;
-  padding-left: 3em;
+  padding-top: 0.8em;
+  padding-left: 2em;
   padding-bottom: 1em;
   padding-bottom: 5%;
   text-align: left;
@@ -385,31 +401,30 @@
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__text {
     margin-top: 1em;
-    max-width: 270px;
+    max-width: 470px;
     padding-bottom: 0%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2em;
   }
-}
-.secondSection__element__textContainer__text--last {
-  font-size: 0.95em;
-  max-width: 290px;
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__line {
-    padding-top: 0.5em;
+    padding-top: 2em;
     margin-bottom: 1em;
-    margin-left: 2.2em;
-    max-width: 240px;
-    border-bottom: 2px solid #EB476E;
+    margin-left: 2em;
+    max-width: 330px;
+    border-bottom: 3px solid #EB476E;
   }
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__line--blue {
-    border-bottom: 2px solid #08A6E4;
+    border-bottom: 3px solid #08A6E4;
   }
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__line--green {
-    border-bottom: 2px solid #55DFB4;
+    border-bottom: 3px solid #55DFB4;
   }
 }
 
@@ -423,14 +438,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
 .pricing__title {
   text-align: center;
   font-size: 1.7em;
-  padding-bottom: 0.7em;
+  margin-bottom: 1em;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__title {
@@ -474,17 +489,17 @@
     display: inline-block;
     margin-left: 0.5em;
     margin-right: 1em;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 5em;
+    padding-right: 5em;
     padding-bottom: 0.5em;
   }
 }
 .pricing__pricingBox__leftContent {
   display: inline-block;
   vertical-align: top;
-  padding-top: 4em;
+  margin-top: 2em;
   text-align: center;
-  min-width: 150px;
+  min-width: 130px;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__leftContent {
@@ -494,11 +509,15 @@
 .pricing__pricingBox__leftContent__name {
   font-weight: bold;
   font-size: 1.2em;
+  margin-bottom: 1em;
 }
 .pricing__pricingBox__leftContent__price {
-  font-size: 2.5em;
+  font-size: 2.875em;
+  font-weight: 300;
+  margin-bottom: 0.2em;
   color: #EB476E;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  font-family: "Open Sans", sans-serif;
 }
 .pricing__pricingBox__leftContent__price--blue {
   color: #08A6E4;
@@ -509,14 +528,18 @@
   padding-bottom: 0em;
 }
 .pricing__pricingBox__leftContent__footer {
-  font-size: 0.7em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 0.875em;
 }
 .pricing__pricingBox__rightContent {
   display: inline-block;
-  font-size: 0.8em;
-  padding-top: 1em;
+  font-size: 0.875em;
+  padding-top: 1.2em;
   align-items: end;
   text-align: left;
+  font-weight: 400;
+  margin-top: 1.5em;
 }
 .pricing__pricingBox__rightContent__line {
   margin: 1em;
@@ -534,7 +557,7 @@
 .pricing__pricingBox__button {
   position: absolute;
   bottom: -15%;
-  left: 30%;
+  left: 40%;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 3.8em;
@@ -549,7 +572,7 @@
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__button {
     bottom: 13%;
-    left: 22%;
+    left: 25%;
   }
 }
 .pricing__pricingBox__button--blue {
@@ -675,8 +698,8 @@
 }
 .form__consent__checkbox {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 22px;
+  height: 22px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -693,8 +716,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-50deg) scaleX(-1);
-  width: 7px;
-  height: 3px;
+  width: 10px;
+  height: 6px;
   border: solid #08A6E4;
   border-width: 0 1px 1px 0;
 }

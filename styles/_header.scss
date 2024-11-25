@@ -109,12 +109,12 @@
 
         &__header {
             font-family: $alternativeTextFont;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
 
         &__content {
-            padding-top: 4%;
-            font-size: 1.2rem;
+            margin-top: 2em;
+            font-size: 1rem;
             padding-left: 2em;
             padding-right: 2em;
 
@@ -135,7 +135,9 @@
             font-weight: bold;
             border: none;
             box-shadow: 10px 6px 16px #07ACE6;
-            font-size: 1.2rem;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.2em;
             cursor: pointer;
 
             @media only screen and (min-width:1000px) {

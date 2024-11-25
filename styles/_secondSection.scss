@@ -5,14 +5,16 @@
     font-family: $alternativeTextFont;
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: #ffffff;
+    background-color: #f7f7f7f7;
+
 
     @media only screen and (min-width:1000px) {
         display: flex;
         flex-direction: column;
-        max-width: 1000px;
         padding-top: 5em;
         margin: 0 auto;
+
+
 
     }
 
@@ -25,9 +27,11 @@
         margin-bottom: 3em;
 
         @media only screen and (min-width:1000px) {
-            margin-left: 10em;
-            margin-right: 10em;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 3em;
+            width: 1000px;
+            height: 280px;
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -54,8 +58,8 @@
                 @media only screen and (min-width:1000px) {
                     scale: 1.5;
                     padding-top: 0em;
-                    top: 30%;
-                    left: -10%;
+                    top: 35%;
+                    left: -70%;
                 }
             }
 
@@ -67,7 +71,8 @@
 
                 @media only screen and (min-width:1000px) {
                     scale: 1.5;
-                    left: 50%;
+                    left: -10%;
+                    top: 5%;
                 }
             }
 
@@ -79,9 +84,9 @@
                 background: transparent;
 
                 @media only screen and (min-width:1000px) {
-                    scale: 1.5;
+                    scale: 2;
                     left: 14%;
-                    top: 10%;
+                    top: 20%;
                     position: absolute;
                 }
             }
@@ -95,8 +100,8 @@
 
                 @media only screen and (min-width:1000px) {
                     left: 12%;
-                    top: 10%;
-                    scale: 1.5;
+                    top: 20%;
+                    scale: 2;
                 }
             }
 
@@ -109,9 +114,9 @@
 
                 @media only screen and (min-width:1000px) {
                     left: 10%;
-                    top: 0%;
+
                     height: 280px;
-                    width: 280px;
+                    width: 380px;
                 }
             }
 
@@ -125,7 +130,15 @@
 
                 @media only screen and (min-width:1000px) {
                     top: 30%;
-                    left: 15%;
+                    left: 25%;
+                }
+            }
+
+            &--last {
+
+                @media only screen and (min-width:1000px) {
+                    background-color: #f7f7f7f7;
+                    width: 50%;
                 }
             }
         }
@@ -135,7 +148,7 @@
 
             &--second {
                 @media only screen and (min-width:1000px) {
-                    padding-left: 25em;
+                    padding-left: 30em;
                 }
             }
 
@@ -148,9 +161,9 @@
 
             &__title {
                 padding-top: 0.5em;
-                font-size: 2em;
+                font-size: 2.25em;
                 text-align: left;
-                padding-left: 1.2em;
+                padding-left: 0.9em;
                 max-width: 300px;
 
                 @media only screen and (min-width:1000px) {
@@ -169,8 +182,8 @@
             }
 
             &__text {
-                padding-top: 1.5em;
-                padding-left: 3em;
+                padding-top: 0.8em;
+                padding-left: 2em;
                 padding-bottom: 1em;
                 padding-bottom: 5%;
                 text-align: left;
@@ -179,35 +192,35 @@
 
                 @media only screen and (min-width:1000px) {
                     margin-top: 1em;
-                    max-width: 270px;
+                    max-width: 470px;
                     padding-bottom: 0%;
+                    font-weight: 400;
+                    font-size: 1em;
+                    line-height: 1.2em;
                 }
 
-                &--last {
-                    font-size: 0.95em;
-                    max-width: 290px;
-                }
+
             }
 
             &__line {
 
                 @media only screen and (min-width:1000px) {
-                    padding-top: 0.5em;
+                    padding-top: 2em;
                     margin-bottom: 1em;
-                    margin-left: 2.2em;
-                    max-width: 240px;
-                    border-bottom: 2px solid $pricingPink;
+                    margin-left: 2em;
+                    max-width: 330px;
+                    border-bottom: 3px solid $pricingPink;
                 }
 
                 &--blue {
                     @media only screen and (min-width:1000px) {
-                        border-bottom: 2px solid $button-color;
+                        border-bottom: 3px solid $button-color;
                     }
                 }
 
                 &--green {
                     @media only screen and (min-width:1000px) {
-                        border-bottom: 2px solid $pricingGreen;
+                        border-bottom: 3px solid $pricingGreen;
                     }
                 }
             }
