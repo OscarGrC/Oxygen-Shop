@@ -216,6 +216,7 @@
   font-family: "Raleway", sans-serif;
   padding-top: 2em;
   padding-bottom: 2em;
+  background-color: #ffffff;
 }
 @media only screen and (min-width: 1000px) {
   .secondSection {
@@ -228,7 +229,7 @@
 }
 .secondSection__element {
   position: relative;
-  background-color: rgb(240, 240, 240);
+  background-color: #ffffff;
   text-align: center;
   margin-left: 3em;
   margin-right: 3em;
@@ -827,5 +828,5 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(240, 240, 240);
+  background-color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
