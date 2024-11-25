@@ -29,8 +29,13 @@
         &__iconX {
             display: inline;
             position: absolute;
-            right: 8%;
+            right: 15%;
+
             top: 30%;
+
+            @media only screen and (min-width:1000px) {
+                right: 8%;
+            }
 
         }
 

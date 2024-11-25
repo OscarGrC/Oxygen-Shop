@@ -15,9 +15,19 @@
 
     &__header {
         color: $defaultColorText;
-        font-size: 2.25em;
-        font-weight: 400;
-        line-height: 2.6em;
+        font-size: 1.875em;
+        font-weight: 300;
+        line-height: 1em;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media only screen and (min-width:1000px) {
+            font-size: 2.25em;
+            font-weight: 400;
+            line-height: 2.6em;
+            max-width: 1000px;
+        }
 
     }
 
@@ -54,12 +64,13 @@
         &__count {
             padding-top: 0.5em;
             font-weight: bold;
-            font-size: 1.7em;
+            font-size: 1.25em;
+            font-weight: 800;
+            letter-spacing: 0.2em;
             font-family: $alternativeTextFont;
 
             @media only screen and (min-width:1000px) {
                 font-size: 1.7em;
-                font-weight: 800;
                 letter-spacing: 0.3em;
 
 

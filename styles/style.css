@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 .header__navbar {
   padding: 1em;
@@ -163,9 +163,20 @@
 }
 .mostPopular__header {
   color: black;
-  font-size: 2.25em;
-  font-weight: 400;
-  line-height: 2.6em;
+  font-size: 1.875em;
+  font-weight: 300;
+  line-height: 1em;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 1000px) {
+  .mostPopular__header {
+    font-size: 2.25em;
+    font-weight: 400;
+    line-height: 2.6em;
+    max-width: 1000px;
+  }
 }
 .mostPopular__element {
   padding-top: 8%;
@@ -193,13 +204,14 @@
 .mostPopular__element__count {
   padding-top: 0.5em;
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: 1.25em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 1000px) {
   .mostPopular__element__count {
     font-size: 1.7em;
-    font-weight: 800;
     letter-spacing: 0.3em;
   }
 }
@@ -224,7 +236,6 @@
 .secondSection {
   font-family: "Raleway", sans-serif;
   padding-top: 2em;
-  padding-bottom: 2em;
   background-color: rgba(247, 247, 247, 0.968627451);
 }
 @media only screen and (min-width: 1000px) {
@@ -233,6 +244,7 @@
     flex-direction: column;
     padding-top: 5em;
     margin: 0 auto;
+    padding-bottom: 2em;
   }
 }
 .secondSection__element {
@@ -361,6 +373,9 @@
     padding-left: 30em;
   }
 }
+.secondSection__element__textContainer--last {
+  padding-bottom: 0.5em;
+}
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer--last {
     display: inline-block;
@@ -371,13 +386,14 @@
   padding-top: 0.5em;
   font-size: 2.25em;
   text-align: left;
-  padding-left: 0.9em;
+  padding-left: 0.2em;
   max-width: 300px;
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__title {
     padding-top: 1em;
     max-width: 300px;
+    padding-left: 0.9em;
   }
 }
 .secondSection__element__textContainer__title--last {
@@ -391,21 +407,23 @@
 }
 .secondSection__element__textContainer__text {
   padding-top: 0.8em;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-bottom: 1em;
   padding-bottom: 5%;
   text-align: left;
-  font-size: 0.75em;
-  max-width: 270px;
+  font-size: 0.875em;
+  max-width: 290px;
+  font-weight: 400;
+  line-height: 1.31em;
 }
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__text {
     margin-top: 1em;
     max-width: 470px;
     padding-bottom: 0%;
-    font-weight: 400;
     font-size: 1em;
     line-height: 1.2em;
+    padding-left: 2em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -433,6 +451,10 @@
   padding-left: 1.8em;
   padding-right: 1.8em;
 }
+.pricing__container {
+  max-width: 330px;
+  margin: 0 auto;
+}
 @media only screen and (min-width: 1000px) {
   .pricing__container {
     display: flex;
@@ -444,12 +466,14 @@
 }
 .pricing__title {
   text-align: center;
-  font-size: 1.7em;
-  margin-bottom: 1em;
+  font-size: 2.25em;
+  font-weight: 400;
+  margin-bottom: 0.4em;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__title {
     padding-top: 100px;
+    margin-bottom: 1em;
   }
 }
 .pricing__pricingBoxContainer {
@@ -491,25 +515,30 @@
     margin-right: 1em;
     padding-left: 3.5em;
     padding-right: 4em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
   }
 }
 .pricing__pricingBox__leftContent {
   display: inline-block;
   vertical-align: top;
-  margin-top: 2em;
+  margin-top: 5.4em;
   text-align: center;
   min-width: 130px;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__leftContent {
     display: block;
+    margin-top: 2em;
   }
 }
 .pricing__pricingBox__leftContent__name {
   font-weight: bold;
   font-size: 1.2em;
-  margin-bottom: 1em;
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__pricingBox__leftContent__name {
+    margin-bottom: 1em;
+  }
 }
 .pricing__pricingBox__leftContent__price {
   font-size: 2.875em;
@@ -549,6 +578,7 @@
 }
 .pricing__pricingBox__rightContent__line {
   margin: 1em;
+  margin-bottom: 1.5em;
 }
 .pricing__pricingBox__rightContent__line__img {
   display: inline;
@@ -556,14 +586,15 @@
 .pricing__pricingBox__rightContent__line__p {
   display: inline-block;
   margin-left: 1em;
+  font-family: "Open Sans", sans-serif;
 }
 .pricing__pricingBox__rightContent__line__p--last {
   padding-bottom: 3em;
 }
 .pricing__pricingBox__button {
   position: absolute;
-  bottom: -15%;
-  left: 40%;
+  bottom: -10%;
+  left: 25%;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 3.8em;
@@ -577,7 +608,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__button {
-    bottom: 13%;
+    bottom: 11%;
     left: 25%;
   }
 }
@@ -600,20 +631,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3.5em 2em 1fr;
-    grid-template-columns: 25em 35em;
+    grid-template-columns: 20em 29em;
     padding-left: 2em;
     justify-content: center;
+    gap: 0em 8em;
   }
 }
 .form__title {
   font-size: 2.2em;
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 @media only screen and (min-width: 1000px) {
   .form__title {
     grid-column: 1;
     grid-row: 1;
     z-index: 1;
+    font-size: 3em;
   }
 }
 .form__subTitle {
@@ -621,16 +655,19 @@
   font-family: "Raleway", sans-serif;
   padding-bottom: 1em;
 }
-@media only screen and (min-width: 1000px) and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .form__subTitle {
     grid-column: 1;
     grid-row: 2;
     z-index: 2;
+    font-size: 1em;
+    margin-top: 0.6em;
   }
 }
 .form__contactLine {
   padding-top: 1em;
   font-family: "Open Sans", sans-serif;
+  position: relative;
 }
 @media only screen and (min-width: 1000px) {
   .form__contactLine {
@@ -643,6 +680,10 @@
     margin-left: 12em;
   }
 }
+.form__contactLine__img {
+  position: absolute;
+  top: 40%;
+}
 @media only screen and (min-width: 1000px) {
   .form__contactLine__img {
     position: relative;
@@ -652,6 +693,12 @@
 .form__contactLine__text {
   display: inline-block;
   color: gray;
+  margin-left: 2em;
+}
+@media only screen and (min-width: 1000px) {
+  .form__contactLine__text {
+    margin-left: 0em;
+  }
 }
 .form__inputLine {
   padding-top: 1em;
@@ -739,16 +786,18 @@
 .form__consent__text {
   color: gray;
   text-align: left;
-  padding-left: 2em;
+  margin-left: 2.5em;
   padding-right: 4em;
-  padding-bottom: 6em;
+  margin-bottom: 6em;
   font-size: 0.7em;
 }
 @media only screen and (min-width: 1000px) {
   .form__consent__text {
-    font-size: 0.9em;
     padding-bottom: 0em;
     padding-right: 2em;
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1.1em;
   }
 }
 .form__buttonContainer {
@@ -812,8 +861,13 @@
 .footerPage__icons__iconX {
   display: inline;
   position: absolute;
-  right: 8%;
+  right: 15%;
   top: 30%;
+}
+@media only screen and (min-width: 1000px) {
+  .footerPage__icons__iconX {
+    right: 8%;
+  }
 }
 .footerPage__icons__iconFace {
   display: inline;

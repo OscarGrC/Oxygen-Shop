@@ -12,21 +12,22 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 3.5em 2em 1fr;
-        grid-template-columns: 25em 35em;
+        grid-template-columns: 20em 29em;
         padding-left: 2em;
         justify-content: center;
-
+        gap: 0em 8em;
     }
 
     &__title {
         font-size: 2.2em;
         font-family: $alternativeTextFont;
+        font-weight: 400;
 
         @media only screen and (min-width:1000px) {
             grid-column: 1;
             grid-row: 1;
             z-index: 1;
-
+            font-size: 3em;
         }
     }
 
@@ -35,21 +36,20 @@
         font-family: $alternativeTextFont;
         padding-bottom: 1em;
 
-
         @media only screen and (min-width:1000px) {
-            @media only screen and (min-width:1000px) {
-                grid-column: 1;
-                grid-row: 2;
-                z-index: 2;
-
-            }
+            grid-column: 1;
+            grid-row: 2;
+            z-index: 2;
+            font-size: 1em;
+            margin-top: 0.6em;
         }
+
     }
 
     &__contactLine {
         padding-top: 1em;
         font-family: $defaultTextFont;
-
+        position: relative;
 
         @media only screen and (min-width:1000px) {
             grid-column: 1;
@@ -64,6 +64,9 @@
         }
 
         &__img {
+            position: absolute;
+            top: 40%;
+
             @media only screen and (min-width:1000px) {
                 position: relative;
                 top: 15%;
@@ -73,6 +76,11 @@
         &__text {
             display: inline-block;
             color: gray;
+            margin-left: 2em;
+
+            @media only screen and (min-width:1000px) {
+                margin-left: 0em;
+            }
         }
     }
 
@@ -140,6 +148,7 @@
             grid-row: 4;
             padding-top: 2em;
 
+
         }
 
         &__checkbox {
@@ -171,15 +180,17 @@
         &__text {
             color: gray;
             text-align: left;
-            padding-left: 2em;
+            margin-left: 2.5em;
             padding-right: 4em;
-            padding-bottom: 6em;
+            margin-bottom: 6em;
             font-size: 0.7em;
 
             @media only screen and (min-width:1000px) {
-                font-size: 0.9em;
                 padding-bottom: 0em;
                 padding-right: 2em;
+                font-size: 0.75em;
+                font-weight: 400;
+                line-height: 1.1em;
             }
 
         }
