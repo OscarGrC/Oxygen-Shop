@@ -74,7 +74,7 @@
   .header__navbar__list__element--first {
     border-bottom: 3px solid #08A6E4;
     font-weight: bold;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.4em;
   }
 }
 .header__navbar__progressBarContainer {
@@ -200,7 +200,7 @@
   .mostPopular__element__count {
     font-size: 1.7em;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 0.3em;
   }
 }
 .mostPopular__element__text {
@@ -713,7 +713,7 @@
 .form__consent__checkbox:checked::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-50deg) scaleX(-1);
   width: 10px;
