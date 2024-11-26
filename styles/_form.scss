@@ -4,7 +4,7 @@
 .form {
     padding-top: 1em;
     padding-left: 2em;
-    padding-bottom: 2sem;
+    padding-bottom: 2em;
     font-family: $defaultTextFont;
     position: relative;
 
@@ -43,6 +43,7 @@
             z-index: 2;
             font-size: 1em;
             margin-top: 0.6em;
+            font-family: $defaultTextFont;
         }
 
     }
@@ -76,7 +77,7 @@
 
         &__text {
             display: inline-block;
-            color: gray;
+            color: #A5A5A5;
             margin-left: 2em;
 
             @media only screen and (min-width:1000px) {
@@ -128,13 +129,13 @@
             border: none;
             border-bottom: 1px solid gray;
             width: 90%;
-
+            outline: none;
 
         }
 
         &__inputUserEmail {
             border: none;
-
+            outline: none;
             border-bottom: 1px solid gray;
             width: 90%;
         }

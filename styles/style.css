@@ -58,9 +58,6 @@
   font-size: 1em;
   padding-left: 1.2em;
 }
-.header__navbar__list__element--first {
-  color: black;
-}
 @media only screen and (min-width: 1000px) {
   .header__navbar__list {
     display: block;
@@ -75,11 +72,12 @@
     margin-left: 1.5em;
     margin-right: 1.5em;
   }
-  .header__navbar__list__element--first {
+  .header__navbar__list__element:hover {
     border-bottom: 3px solid #08A6E4;
     font-weight: bold;
     padding-bottom: 2.1em;
     padding-left: 0.2em;
+    color: black;
   }
 }
 .header__navbar__logo {
@@ -168,6 +166,7 @@
 }
 
 .mostPopular {
+  padding-bottom: 5em;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
@@ -667,7 +666,7 @@
 .form {
   padding-top: 1em;
   padding-left: 2em;
-  padding-bottom: 2sem;
+  padding-bottom: 2em;
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
@@ -708,6 +707,7 @@
     z-index: 2;
     font-size: 1em;
     margin-top: 0.6em;
+    font-family: "Open Sans", sans-serif;
   }
 }
 .form__contactLine {
@@ -738,7 +738,7 @@
 }
 .form__contactLine__text {
   display: inline-block;
-  color: gray;
+  color: #A5A5A5;
   margin-left: 2em;
 }
 @media only screen and (min-width: 1000px) {
@@ -788,9 +788,11 @@
   border: none;
   border-bottom: 1px solid gray;
   width: 90%;
+  outline: none;
 }
 .form__inputLine__inputUserEmail {
   border: none;
+  outline: none;
   border-bottom: 1px solid gray;
   width: 90%;
 }

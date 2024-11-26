@@ -52,10 +52,6 @@
                 margin-bottom: 1em;
                 font-size: 1em;
                 padding-left: 1.2em;
-
-                &--first {
-                    color: black;
-                }
             }
 
 
@@ -72,13 +68,16 @@
                     margin-left: 1.5em;
                     margin-right: 1.5em;
 
-                    &--first {
-                        border-bottom: 3px solid $button-color;
-                        font-weight: bold;
-                        padding-bottom: 2.1em;
-                        padding-left: 0.2em;
 
-                    }
+                }
+
+                &__element:hover {
+                    border-bottom: 3px solid $button-color;
+                    font-weight: bold;
+                    padding-bottom: 2.1em;
+                    padding-left: 0.2em;
+                    color: black;
+
                 }
             }
         }
