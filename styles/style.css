@@ -517,7 +517,17 @@
 }
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px -5px #EB476E;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__pricingBox--blue:hover {
+    box-shadow: 0px 10px 10px -5px #08A6E4;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__pricingBox--green:hover {
+    box-shadow: 0px 10px 10px -5px #55DFB4;
   }
 }
 .pricing__pricingBox {

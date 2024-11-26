@@ -55,7 +55,19 @@
     &__pricingBox:hover {
 
         @media only screen and (min-width:1000px) {
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 10px -5px $pricingPink;
+        }
+    }
+
+    &__pricingBox--blue:hover {
+        @media only screen and (min-width:1000px) {
+            box-shadow: 0px 10px 10px -5px $button-color;
+        }
+    }
+
+    &__pricingBox--green:hover {
+        @media only screen and (min-width:1000px) {
+            box-shadow: 0px 10px 10px -5px $pricingGreen;
         }
     }
 
