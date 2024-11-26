@@ -17,6 +17,8 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
+
     }
 
     //titulo
@@ -81,6 +83,12 @@
             padding-left: 3.5em;
             padding-right: 4em;
             padding-bottom: 1em;
+        }
+
+        @media only screen and (min-width:1250px) {
+            padding-left: 6em;
+            padding-right: 6em;
+
         }
 
         //contenido izquierdo
@@ -190,6 +198,11 @@
             @media only screen and (min-width:1000px) {
                 bottom: 11%;
                 left: 25%;
+            }
+
+            @media only screen and (min-width:1250px) {
+                left: 30%;
+
             }
 
             &--blue {

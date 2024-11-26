@@ -27,9 +27,12 @@
             display: none;
             font-family: $defaultTextFont;
             color: gray;
+            font-size: 0.7em;
+            line-height: 0.9em;
             letter-spacing: 2px;
             font-weight: 700;
             position: absolute;
+            margin-bottom: 1em;
             width: 100%;
             left: 0%;
             box-shadow: 0px 2px 5px rgba(65, 64, 64, 0.5);
@@ -41,44 +44,53 @@
             &--event {
                 display: block;
                 padding-left: 1em;
-                padding-top: 1.5em;
-                padding-bottom: 0.5em;
+                padding-top: 1em;
+                padding-bottom: 1em;
             }
 
             &__element {
                 margin-bottom: 1em;
                 font-size: 1em;
-                padding-left: 1em;
+                padding-left: 1.2em;
 
                 &--first {
                     color: black;
-
-
                 }
             }
 
 
             @media only screen and (min-width:1000px) {
                 display: block;
-                right: 5%;
+                right: 4%;
                 bottom: 1.5em;
                 box-shadow: 0px 0px 0px rgba(65, 64, 64, 0.5);
                 width: auto;
                 left: auto;
 
-
                 &__element {
                     display: inline;
-
-                    margin-right: 2em;
+                    margin-left: 1.5em;
+                    margin-right: 1.5em;
 
                     &--first {
                         border-bottom: 3px solid $button-color;
                         font-weight: bold;
-                        padding-bottom: 1.3em;
+                        padding-bottom: 2.1em;
+                        padding-left: 0.2em;
 
                     }
                 }
+            }
+        }
+
+        &__logo {
+            color: $button-color;
+            font-size: 2em;
+            font-weight: 300;
+            font-family: $alternativeTextFont;
+
+            @media only screen and (min-width:1000px) {
+                padding-left: 1em;
             }
         }
 
