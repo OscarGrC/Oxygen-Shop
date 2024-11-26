@@ -10,6 +10,7 @@
 
         padding-left: 5.2em;
         padding-right: 5em;
+        padding-bottom: 3em;
 
     }
 
@@ -33,6 +34,10 @@
 
     &__element {
         padding-top: 8%;
+
+        @media only screen and (min-width:1000px) {
+            padding-top: 4em;
+        }
 
         &__imgContainer {
             position: relative;
@@ -72,8 +77,6 @@
             @media only screen and (min-width:1000px) {
                 font-size: 1.7em;
                 letter-spacing: 0.3em;
-
-
             }
         }
 

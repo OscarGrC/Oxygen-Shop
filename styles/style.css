@@ -10,31 +10,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-
 .header__navbar {
   padding: 1em;
   box-shadow: 0px 2px 3px rgba(65, 64, 64, 0.5);
   border-bottom: 2px solid #ccc;
   position: relative;
 }
-
 .header__navbar__element {
   width: 60%;
   max-width: 300px;
 }
-
 .header__navbar__element--second {
   position: absolute;
   right: 2em;
   top: 2em;
 }
-
 @media only screen and (min-width: 1000px) {
   .header__navbar__element--second {
     visibility: hidden;
   }
 }
-
 .header__navbar__list {
   display: none;
   font-family: "Open Sans", sans-serif;
@@ -49,28 +44,23 @@
   left: 0%;
   box-shadow: 0px 2px 5px rgba(65, 64, 64, 0.5);
 }
-
 .header__navbar__list__ul {
   list-style: none;
 }
-
 .header__navbar__list--event {
   display: block;
   padding-left: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
 .header__navbar__list__element {
   margin-bottom: 1em;
   font-size: 1em;
   padding-left: 1.2em;
 }
-
 .header__navbar__list__element--first {
   color: black;
 }
-
 @media only screen and (min-width: 1000px) {
   .header__navbar__list {
     display: block;
@@ -80,13 +70,11 @@
     width: auto;
     left: auto;
   }
-
   .header__navbar__list__element {
     display: inline;
     margin-left: 1.5em;
     margin-right: 1.5em;
   }
-
   .header__navbar__list__element--first {
     border-bottom: 3px solid #08A6E4;
     font-weight: bold;
@@ -94,20 +82,17 @@
     padding-left: 0.2em;
   }
 }
-
 .header__navbar__logo {
   color: #08A6E4;
   font-size: 2em;
   font-weight: 300;
   font-family: "Raleway", sans-serif;
 }
-
 @media only screen and (min-width: 1000px) {
   .header__navbar__logo {
     padding-left: 1em;
   }
 }
-
 .header__navbar__progressBarContainer {
   position: fixed;
   top: 0;
@@ -116,38 +101,32 @@
   height: 5px;
   z-index: 3;
 }
-
 .header__navbar__progressBarContainer__progressBar {
   height: 100%;
   width: 0%;
   background-color: #e65a0a;
 }
-
 .header .openingSection {
   font-family: "Open Sans", sans-serif;
   color: black;
   text-align: center;
   padding-top: 4em;
 }
-
 .header .openingSection__header {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
 }
-
 .header .openingSection__content {
   margin-top: 2em;
   font-size: 1rem;
   padding-left: 2em;
   padding-right: 2em;
 }
-
 @media only screen and (min-width: 1000px) {
   .header .openingSection__content {
     font-size: 0.9;
   }
 }
-
 .header .openingSection__button {
   margin-top: 2em;
   padding: 1.5em;
@@ -164,7 +143,6 @@
   line-height: 1.2em;
   cursor: pointer;
 }
-
 @media only screen and (min-width: 1000px) {
   .header .openingSection__button {
     padding-left: 8em;
@@ -176,13 +154,11 @@
   overflow: hidden;
   padding-top: 2em;
 }
-
 .image__content {
   width: 195%;
   height: auto;
   transform: translate(-25%, 0%);
 }
-
 @media only screen and (min-width: 1000px) {
   .image__content {
     width: 100%;
@@ -195,14 +171,13 @@
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
-
 @media only screen and (min-width: 1000px) {
   .mostPopular {
     padding-left: 5.2em;
     padding-right: 5em;
+    padding-bottom: 3em;
   }
 }
-
 .mostPopular__header {
   color: black;
   font-size: 1.875em;
@@ -212,7 +187,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 @media only screen and (min-width: 1000px) {
   .mostPopular__header {
     font-size: 2.25em;
@@ -221,35 +195,34 @@
     max-width: 1000px;
   }
 }
-
 .mostPopular__element {
   padding-top: 8%;
 }
-
+@media only screen and (min-width: 1000px) {
+  .mostPopular__element {
+    padding-top: 4em;
+  }
+}
 .mostPopular__element__imgContainer {
   position: relative;
 }
-
 .mostPopular__element__imgContainer--person {
   left: 50%;
   position: absolute;
   background: transparent;
 }
-
 .mostPopular__element__imgContainer--eye {
   left: 48%;
   top: 20%;
   position: absolute;
   background: transparent;
 }
-
 .mostPopular__element__imgContainer--papers {
   left: 50%;
   top: 14%;
   position: absolute;
   background: transparent;
 }
-
 .mostPopular__element__count {
   padding-top: 0.5em;
   font-weight: bold;
@@ -258,20 +231,17 @@
   letter-spacing: 0.2em;
   font-family: "Raleway", sans-serif;
 }
-
 @media only screen and (min-width: 1000px) {
   .mostPopular__element__count {
     font-size: 1.7em;
     letter-spacing: 0.3em;
   }
 }
-
 .mostPopular__element__text {
   padding-top: 0.5em;
   color: gray;
   font-size: 1em;
 }
-
 @media only screen and (min-width: 1000px) {
   .mostPopular__element {
     display: inline-block;
@@ -290,7 +260,6 @@
   padding-top: 2em;
   background-color: rgba(247, 247, 247, 0.968627451);
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection {
     display: flex;
@@ -300,7 +269,6 @@
     padding-bottom: 2em;
   }
 }
-
 .secondSection__element {
   position: relative;
   background-color: #ffffff;
@@ -309,7 +277,6 @@
   margin-right: 3em;
   margin-bottom: 3em;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element {
     margin-left: auto;
@@ -322,17 +289,14 @@
     justify-content: space-between;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element--last {
     flex-direction: row;
   }
 }
-
 .secondSection__element__imgContainer {
   position: relative;
 }
-
 .secondSection__element__imgContainer--pc {
   background: transparent;
   padding-top: 3em;
@@ -340,7 +304,6 @@
   z-index: 2;
   position: relative;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--pc {
     scale: 1.5;
@@ -349,14 +312,12 @@
     left: -70%;
   }
 }
-
 .secondSection__element__imgContainer--ellipseRed {
   background: transparent;
   position: absolute;
   left: 45%;
   z-index: 1;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--ellipseRed {
     scale: 1.5;
@@ -364,7 +325,6 @@
     top: 5%;
   }
 }
-
 .secondSection__element__imgContainer--phone {
   padding-top: 1.2em;
   left: 5%;
@@ -372,7 +332,6 @@
   position: relative;
   background: transparent;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--phone {
     scale: 2;
@@ -381,7 +340,6 @@
     position: absolute;
   }
 }
-
 .secondSection__element__imgContainer--ellipseBlue {
   background: transparent;
   position: absolute;
@@ -389,7 +347,6 @@
   z-index: 1;
   margin-top: 1em;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--ellipseBlue {
     left: 12%;
@@ -397,14 +354,12 @@
     scale: 2;
   }
 }
-
 .secondSection__element__imgContainer--rectangle {
   background: transparent;
   position: relative;
   z-index: 1;
   width: 100%;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--rectangle {
     left: 10%;
@@ -412,7 +367,6 @@
     width: 380px;
   }
 }
-
 .secondSection__element__imgContainer--trumpet {
   z-index: 2;
   width: 80%;
@@ -421,42 +375,35 @@
   position: absolute;
   background: transparent;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--trumpet {
     top: 30%;
     left: 25%;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__imgContainer--last {
     background-color: rgba(247, 247, 247, 0.968627451);
     width: 50%;
   }
 }
-
 .secondSection__element__textContainer {
   padding-bottom: 2em;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer--second {
     padding-left: 30em;
   }
 }
-
 .secondSection__element__textContainer--last {
   padding-bottom: 0.5em;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer--last {
     display: inline-block;
     padding-top: 2em;
   }
 }
-
 .secondSection__element__textContainer__title {
   padding-top: 0.5em;
   font-size: 2.25em;
@@ -464,7 +411,6 @@
   padding-left: 0.2em;
   max-width: 300px;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__title {
     padding-top: 1em;
@@ -472,18 +418,15 @@
     padding-left: 0.9em;
   }
 }
-
 .secondSection__element__textContainer__title--last {
   padding-top: 2%;
   max-width: 260px;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__title--last {
     max-width: 400px;
   }
 }
-
 .secondSection__element__textContainer__text {
   padding-top: 0.8em;
   padding-left: 1em;
@@ -496,7 +439,6 @@
   line-height: 1.31em;
   font-family: "Open Sans", sans-serif;
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__text {
     margin-top: 1em;
@@ -508,7 +450,6 @@
     padding-left: 2em;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__line {
     padding-top: 2em;
@@ -518,13 +459,11 @@
     border-bottom: 3px solid #EB476E;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__line--blue {
     border-bottom: 3px solid #08A6E4;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .secondSection__element__textContainer__line--green {
     border-bottom: 3px solid #55DFB4;
@@ -536,12 +475,10 @@
   padding-left: 1.8em;
   padding-right: 1.8em;
 }
-
 .pricing__container {
   max-width: 330px;
   margin: 0 auto;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__container {
     display: flex;
@@ -551,60 +488,50 @@
     margin: 0 auto;
   }
 }
-
 .pricing__title {
   text-align: center;
   font-size: 2.25em;
   font-weight: 400;
   margin-bottom: 0.4em;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__title {
     padding-top: 100px;
     margin-bottom: 1em;
   }
 }
-
 .pricing__pricingBoxContainer {
   position: relative;
   overflow: visible;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBoxContainer {
     display: inline-block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBoxContainer:hover {
     transform: scale(1.1);
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   }
 }
-
 .pricing__pricingBox {
   margin-bottom: 5em;
   border: 1px solid #EB476E;
   border-radius: 18px;
   overflow: hidden;
 }
-
 .pricing__pricingBox--blue {
   border: 1px solid #08A6E4;
 }
-
 .pricing__pricingBox--green {
   border: 1px solid #55DFB4;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox {
     display: inline-block;
@@ -615,14 +542,12 @@
     padding-bottom: 1em;
   }
 }
-
 @media only screen and (min-width: 1250px) {
   .pricing__pricingBox {
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 }
-
 .pricing__pricingBox__leftContent {
   display: inline-block;
   vertical-align: top;
@@ -630,25 +555,21 @@
   text-align: center;
   min-width: 130px;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__leftContent {
     display: block;
     margin-top: 2em;
   }
 }
-
 .pricing__pricingBox__leftContent__name {
   font-weight: bold;
   font-size: 1.2em;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__leftContent__name {
     margin-bottom: 1em;
   }
 }
-
 .pricing__pricingBox__leftContent__price {
   font-size: 2.875em;
   font-weight: 300;
@@ -657,23 +578,19 @@
   padding-bottom: 0.3em;
   font-family: "Open Sans", sans-serif;
 }
-
 .pricing__pricingBox__leftContent__price--blue {
   color: #08A6E4;
   padding-bottom: 0em;
 }
-
 .pricing__pricingBox__leftContent__price--green {
   color: #55DFB4;
   padding-bottom: 0em;
 }
-
 .pricing__pricingBox__leftContent__footer {
   font-size: 0.75em;
   font-weight: 700;
   line-height: 0.875em;
 }
-
 .pricing__pricingBox__rightContent {
   display: inline-block;
   font-size: 0.875em;
@@ -684,32 +601,26 @@
   margin-top: 1.5em;
   min-width: 180px;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__rightContent {
     text-align: center;
   }
 }
-
 .pricing__pricingBox__rightContent__line {
   margin: 1em;
   margin-bottom: 1.5em;
 }
-
 .pricing__pricingBox__rightContent__line__img {
   display: inline;
 }
-
 .pricing__pricingBox__rightContent__line__p {
   display: inline-block;
   margin-left: 1em;
   font-family: "Open Sans", sans-serif;
 }
-
 .pricing__pricingBox__rightContent__line__p--last {
   padding-bottom: 3em;
 }
-
 .pricing__pricingBox__button {
   position: absolute;
   bottom: -10%;
@@ -725,24 +636,20 @@
   font-size: 1rem;
   cursor: pointer;
 }
-
 @media only screen and (min-width: 1000px) {
   .pricing__pricingBox__button {
     bottom: 11%;
     left: 25%;
   }
 }
-
 @media only screen and (min-width: 1250px) {
   .pricing__pricingBox__button {
     left: 30%;
   }
 }
-
 .pricing__pricingBox__button--blue {
   background-color: #08A6E4;
 }
-
 .pricing__pricingBox__button--green {
   background-color: #55DFB4;
 }
@@ -754,7 +661,6 @@
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
-
 @media only screen and (min-width: 1000px) {
   .form {
     display: grid;
@@ -767,13 +673,11 @@
     gap: 0em 8em;
   }
 }
-
 .form__title {
   font-size: 2.2em;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__title {
     grid-column: 1;
@@ -782,13 +686,11 @@
     font-size: 3em;
   }
 }
-
 .form__subTitle {
   font-size: 0.8em;
   font-family: "Raleway", sans-serif;
   padding-bottom: 1em;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__subTitle {
     grid-column: 1;
@@ -798,62 +700,52 @@
     margin-top: 0.6em;
   }
 }
-
 .form__contactLine {
   padding-top: 1em;
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__contactLine {
     grid-column: 1;
     grid-row: 3;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .form__contactLine--secondLine {
     margin-left: 12em;
   }
 }
-
 .form__contactLine__img {
   position: absolute;
   top: 40%;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__contactLine__img {
     position: relative;
     top: 15%;
   }
 }
-
 .form__contactLine__text {
   display: inline-block;
   color: gray;
   margin-left: 2em;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__contactLine__text {
     margin-left: 0em;
   }
 }
-
 .form__inputLine {
   padding-top: 1em;
   padding-bottom: 2em;
 }
-
 .form__inputLine__error {
   visibility: hidden;
   color: red;
   font-family: "Raleway", sans-serif;
   font-size: 0.8em;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__inputLine {
     grid-column: 2;
@@ -863,13 +755,11 @@
     vertical-align: top;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .form__inputLine--secondInput {
     grid-row: 3;
   }
 }
-
 .form__inputLine__inputName {
   padding-top: 3em;
   padding-bottom: 2em;
@@ -878,30 +768,25 @@
   font-weight: 600;
   letter-spacing: 0.4em;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__inputLine__inputName {
     padding: 0%;
     padding-bottom: 2em;
   }
 }
-
 .form__inputLine__inputUserName {
   border: none;
   border-bottom: 1px solid gray;
   width: 90%;
 }
-
 .form__inputLine__inputUserEmail {
   border: none;
   border-bottom: 1px solid gray;
   width: 90%;
 }
-
 .form__consent {
   padding-bottom: 2em;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__consent {
     grid-column: 2;
@@ -910,23 +795,20 @@
     padding-bottom: 0em;
   }
 }
-
 .form__consent__checkbox {
   position: absolute;
   width: 22px;
   height: 22px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid gray;
   border-radius: 2px;
   cursor: pointer;
 }
-
 .form__consent__checkbox:checked {
   background-color: transparent;
 }
-
 .form__consent__checkbox:checked::before {
   content: "";
   position: absolute;
@@ -938,7 +820,6 @@
   border: solid #08A6E4;
   border-width: 0 1px 1px 0;
 }
-
 .form__consent__text {
   color: gray;
   text-align: left;
@@ -947,7 +828,6 @@
   margin-bottom: 6em;
   font-size: 0.7em;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__consent__text {
     padding-bottom: 0em;
@@ -958,11 +838,9 @@
     line-height: 1.3em;
   }
 }
-
 .form__buttonContainer {
   position: relative;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__buttonContainer {
     grid-column: 2;
@@ -970,7 +848,6 @@
     text-align: right;
   }
 }
-
 .form__buttonContainer__button {
   position: absolute;
   right: 10%;
@@ -989,7 +866,6 @@
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
 }
-
 @media only screen and (min-width: 1000px) {
   .form__buttonContainer__button {
     position: relative;
@@ -1006,26 +882,22 @@
   position: relative;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
 }
-
 .footerPage__logoContainer {
   display: inline-block;
   padding-top: 0.5em;
   padding-left: 1em;
   padding-bottom: 1em;
 }
-
 @media only screen and (min-width: 1000px) {
   .footerPage__logoContainer {
     padding-top: 1em;
     padding-left: 3em;
   }
 }
-
 .footerPage__logoContainer__logo {
   width: 70%;
   height: auto;
 }
-
 .footerPage__logoContainer__licent {
   font-size: 0.6em;
   color: gray;
@@ -1033,24 +905,20 @@
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
 }
-
 .footerPage__icons {
   display: inline-block;
 }
-
 .footerPage__icons__iconX {
   display: inline;
   position: absolute;
   right: 15%;
   top: 30%;
 }
-
 @media only screen and (min-width: 1000px) {
   .footerPage__icons__iconX {
     right: 8%;
   }
 }
-
 .footerPage__icons__iconFace {
   display: inline;
   position: absolute;
@@ -1067,20 +935,17 @@
   display: none;
   background: transparent;
 }
-
 .goToTop__img {
   width: 3em;
   height: 3em;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-
 .goToTop__img:hover {
   transform: scale(1.1);
 }
-
 .goToTop__vibrating {
   animation: vibrate 0.2s ease-in-out;
   animation-iteration-count: 2;
@@ -1090,24 +955,19 @@
   0% {
     transform: translateX(0);
   }
-
   25% {
     transform: translateX(-5px);
   }
-
   50% {
     transform: translateX(5px);
   }
-
   75% {
     transform: translateX(-5px);
   }
-
   100% {
     transform: translateX(5px);
   }
 }
-
 body {
   min-width: 320px;
 }
@@ -1117,6 +977,4 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
