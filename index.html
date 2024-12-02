@@ -11,14 +11,13 @@
 <body>
     <!--Barra de navegacion-->
     <header class="header">
-        <nav class="header__navbar">
+        <nav class="header__navbar" id="navbar">
             <div class="header__navbar__progressBarContainer">
-                <div class="header__navbar__progressBarContainer__progressBar"></div>
+                <div id="progressBar" class="header__navbar__progressBarContainer__progressBar"></div>
             </div>
-            <!-- <img class="header__navbar__element" src="resources/Logo.png" alt="Logo of company" /> -->
             <p class="header__navbar__logo" alt="Logo of company"> OXYGEN Shop</p>
-            <img class="header__navbar__element--second" src="resources/Menu.png" alt="dropdown icon" />
-            <div class="header__navbar__list">
+            <img class="header__navbar__element--second" id="menuIcon" src="resources/Menu.png" S />
+            <div class="header__navbar__list" id="dropdownList">
                 <ul class="header__navbar__list__ul">
                     <li class="header__navbar__list__element">WHY US</li>
                     <li class="header__navbar__list__element">BENEFITS</li>
@@ -306,8 +305,11 @@
     <button id="goToTop" class="goToTop">
         <img class="goToTop__img" src="resources/up.png" alt="Subir" />
     </button>
-    <!--Script-->
-    <!--  <script src="js/index.js"></script> -->
+    <!--Scripts-->
+    <script type="module" src="js/Utils/utils.js"></script>
+    <script type="module" src="js/Components/navbar-component.js"></script>
+    <script type="module" src="js/Components/goTotop-component.js"></script>
+    <script type="module" src="js/Components/form-component.js"></script>
 </body>
 <!--Footer-->
 <footer class="footerPage">
@@ -316,6 +318,7 @@
         <p class="footerPage__logoContainer__licent">© 2022 OXYGEN, All Rights Reserved</p>
     </div>
     <div class="footerPage__icons">
+        <script src="js/Utils/utils.js"></script>
         <img class="footerPage__icons__iconX" src="resources/x.png">
         <img class="footerPage__icons__iconFace" src="resources/Facebook.png">
 
