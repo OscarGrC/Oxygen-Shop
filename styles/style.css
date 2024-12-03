@@ -473,6 +473,7 @@
   font-family: "Raleway", sans-serif;
   padding-left: 1.8em;
   padding-right: 1.8em;
+  text-align: center;
 }
 .pricing__container {
   max-width: 330px;
@@ -498,6 +499,27 @@
     padding-top: 100px;
     margin-bottom: 1em;
   }
+}
+.pricing__select {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -5px gray;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__select {
+    width: 200px;
+  }
+}
+.pricing__select__element {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 .pricing__pricingBoxContainer {
   position: relative;

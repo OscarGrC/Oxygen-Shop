@@ -139,12 +139,17 @@
     <!--Pricing-->
     <section class="pricing">
         <p class="pricing__title">Pricing</p>
+        <select class="pricing__select" id="select">
+            <option class="pricing__select__element" value="Eur" selected>Euros</option>
+            <option class="pricing__select__element" value="Usd">Dolares</option>
+            <option class="pricing__select__element" value="Gbp">Libras</option>
+        </select>
         <div class="pricing__container">
             <div class="pricing__pricingBoxContainer">
                 <article class="pricing__pricingBox">
                     <div class="pricing__pricingBox__leftContent">
                         <p class="pricing__pricingBox__leftContent__name">Basic</p>
-                        <p class="pricing__pricingBox__leftContent__price">$0</p>
+                        <p id="BascicPrice" class="pricing__pricingBox__leftContent__price">0€</p>
                     </div>
                     <div class="pricing__pricingBox__rightContent">
                         <div class="pricing__pricingBox__rightContent__line">
@@ -180,9 +185,9 @@
                 <article class="pricing__pricingBox pricing__pricingBox--blue">
                     <div class="pricing__pricingBox__leftContent">
                         <p class="pricing__pricingBox__leftContent__name">Professional</p>
-                        <p
+                        <p id="ProfessionalPrice"
                             class="pricing__pricingBox__leftContent__price pricing__pricingBox__leftContent__price--blue">
-                            $25
+                            25€
                         </p>
                         <p class="pricing__pricingBox__leftContent__footer">Limited offer</p>
                     </div>
@@ -221,9 +226,9 @@
                 <article class="pricing__pricingBox pricing__pricingBox--green">
                     <div class="pricing__pricingBox__leftContent">
                         <p class="pricing__pricingBox__leftContent__name">Premiun</p>
-                        <p
+                        <p id="PremiunPrice"
                             class="pricing__pricingBox__leftContent__price pricing__pricingBox__leftContent__price--green">
-                            $60
+                            60€
                         </p>
                         <p class="pricing__pricingBox__leftContent__footer">Limited offer</p>
                     </div>
@@ -281,12 +286,12 @@
         <div class="form_inputLine">
             <p class="form__inputLine__inputName">NAME</p>
             <input class="form__inputLine__inputUserName">
-            <p class="form__inputLine__error form__inputLine__error--name">La longitud tiene que ser de 2 a 100</p>
+            <p class="form__inputLine__error form__inputLine__error--name"></p>
         </div>
         <div class="form__inputLine form__inputLine--secondInput">
             <p class="form__inputLine__inputName">EMAIL</p>
             <input class="form__inputLine__inputUserEmail">
-            <p class="form__inputLine__error form__inputLine__error--email">Correo incorrecto</p>
+            <p class="form__inputLine__error form__inputLine__error--email"></p>
         </div>
         <div class="form__consent">
             <input type="checkbox" class="form__consent__checkbox">
@@ -310,6 +315,7 @@
     <script type="module" src="js/Components/navbar-component.js"></script>
     <script type="module" src="js/Components/goTotop-component.js"></script>
     <script type="module" src="js/Components/form-component.js"></script>
+    <script type="module" src="js/Components/pricing-component.js"></script>
 </body>
 <!--Footer-->
 <footer class="footerPage">
