@@ -1,24 +1,24 @@
-import { Form } from "../Models/form.js";
-import { FormValidator } from "../Validators/form-validator.js";
-import { FormErrors } from "../Errors/form-errors.js";
+import { Form } from "../Models/form.js"
+import { FormValidator } from "../Validators/form-validator.js"
+import { FormErrors } from "../Errors/form-errors.js"
 
 class FormComponent {
     constructor() {
         // Elementos DOM
-        this.nameInput = document.querySelector(".form__inputLine__inputUserName");
-        this.emailInput = document.querySelector(".form__inputLine__inputUserEmail");
-        this.checkbox = document.querySelector(".form__consent__checkbox");
-        this.submitButton = document.getElementById("formButton");
+        this.nameInput = document.querySelector(".form__inputLine__inputUserName")
+        this.emailInput = document.querySelector(".form__inputLine__inputUserEmail")
+        this.checkbox = document.querySelector(".form__consent__checkbox")
+        this.submitButton = document.getElementById("formButton")
 
-        this.nameError = document.querySelector(".form__inputLine__error--name");
-        this.emailError = document.querySelector(".form__inputLine__error--email");
+        this.nameError = document.querySelector(".form__inputLine__error--name")
+        this.emailError = document.querySelector(".form__inputLine__error--email")
         this.formError = new FormErrors();
 
         this.initializeEvents();
     }
 
     initializeEvents() {
-        this.submitButton.addEventListener("click", () => this.ButtonClickEvent());
+        this.submitButton.addEventListener("click", () => this.ButtonClickEvent())
     }
 
     ButtonClickEvent() {
@@ -27,7 +27,7 @@ class FormComponent {
             this.emailInput.value,
             this.checkbox.checked
         );
-        const isValidForm = this.formValidation(form);
+        const isValidForm = this.formValidation(form)
         if (isValidForm) {
             this.formSend(form)
 
@@ -44,13 +44,13 @@ class FormComponent {
         } else {
             if (!validator.isValidName()) {
                 this.nameError.style.visibility = 'visible'
-                this.nameError.textContent = this.formError.getNameError();
+                this.nameError.textContent = this.formError.getNameError()
             } else {
                 this.nameError.style.visibility = 'hidden'
             }
             if (!validator.isValidEmail()) {
                 this.emailError.style.visibility = 'visible'
-                this.emailError.textContent = this.formError.getEmailError();
+                this.emailError.textContent = this.formError.getEmailError()
             } else {
                 this.emailError.style.visibility = 'hidden'
             }
@@ -77,9 +77,9 @@ class FormComponent {
             },
         })
             .then((response) => response.json())
-            .then((json) => console.log(json));
+            .then((json) => console.log(json))
 
     }
 }
 
-const formComponent = new FormComponent();
+const formComponent = new FormComponent()

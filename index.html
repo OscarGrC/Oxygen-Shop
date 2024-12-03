@@ -16,7 +16,7 @@
                 <div id="progressBar" class="header__navbar__progressBarContainer__progressBar"></div>
             </div>
             <p class="header__navbar__logo" alt="Logo of company"> OXYGEN Shop</p>
-            <img class="header__navbar__element--second" id="menuIcon" src="resources/Menu.png" S />
+            <img class="header__navbar__element--second" id="menuIcon" src="resources/Menu.png" />
             <div class="header__navbar__list" id="dropdownList">
                 <ul class="header__navbar__list__ul">
                     <li class="header__navbar__list__element">WHY US</li>
@@ -268,7 +268,15 @@
 
         </div>
     </section>
+    <!--Slider-->
+    <div id="slider" class="slider">
+        <img class="slider__img" src="resources/slider1.jpg" />
+        <img class="slider__back" src="resources/Sliderback.png" />
+        <img class="slider__next" src="resources/Slidernext.png" />
+        <div class="slider_perls">
 
+        </div>
+    </div>
     <!--Formulario-->
     <section class="form">
         <p class="form__title">Any question?</p>
@@ -310,12 +318,23 @@
     <button id="goToTop" class="goToTop">
         <img class="goToTop__img" src="resources/up.png" alt="Subir" />
     </button>
+    <!--popUp-->
+    <section class="popUp" id="popUp">
+        <p class="popUp__title">Subscribe to our newsletter.</p>
+        <img class="popUp__img" id="exitIcon" src="resources/close.png" />
+        <p class="popUp__inputName">EMAIL</p>
+        <input class="popUp__inputUserEmail" id="popUpUserInput">
+        <p class="popUp__error" id="popUpError"> error</p>
+        <button class="popUp__button" id="popUpButton">Send</button>
+    </section>
+
     <!--Scripts-->
     <script type="module" src="js/Utils/utils.js"></script>
     <script type="module" src="js/Components/navbar-component.js"></script>
     <script type="module" src="js/Components/goTotop-component.js"></script>
     <script type="module" src="js/Components/form-component.js"></script>
     <script type="module" src="js/Components/pricing-component.js"></script>
+    <script type="module" src="js/Components/popUp-component.js"></script>
 </body>
 <!--Footer-->
 <footer class="footerPage">

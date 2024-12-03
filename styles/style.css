@@ -968,6 +968,7 @@
   cursor: pointer;
   display: none;
   background: transparent;
+  z-index: 4;
 }
 .goToTop__img {
   width: 3em;
@@ -1002,6 +1003,93 @@
     transform: translateX(5px);
   }
 }
+.popUp {
+  position: fixed;
+  display: none;
+  left: 15%;
+  top: 25%;
+  border: 1px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 4;
+}
+@media only screen and (min-width: 1000px) {
+  .popUp {
+    left: 40%;
+    top: 50%;
+  }
+}
+.popUp__title {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 1000px) {
+  .popUp__title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+}
+.popUp__img {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  height: auto;
+  width: 25px;
+  cursor: pointer;
+}
+.popUp__inputName {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  font-family: "Open Sans", sans-serif;
+  color: #08A6E4;
+  margin-left: 1.5em;
+}
+.popUp__inputUserEmail {
+  margin-left: 1.5em;
+  margin-top: 0.3em;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 80%;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+.popUp__error {
+  visibility: hidden;
+  color: red;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  margin-left: 1.6em;
+}
+.popUp__button {
+  position: relative;
+  left: 35%;
+  margin-bottom: 1em;
+  background-color: #08A6E4;
+  color: White;
+  font-weight: 700;
+  border: none;
+  box-shadow: 5px 2px 6px #07ACE6;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 40px;
+}
+
 body {
   min-width: 320px;
 }

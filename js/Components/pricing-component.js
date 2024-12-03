@@ -1,4 +1,4 @@
-
+import { ApiErrors } from "../Errors/apiPrice-errors.js"
 class PricingComponent {
     constructor() {
         //Elementos DOM 
@@ -6,6 +6,7 @@ class PricingComponent {
         this.basicPrice = document.getElementById('BascicPrice')
         this.premiunPrice = document.getElementById('PremiunPrice')
         this.professionalPrice = document.getElementById('ProfessionalPrice')
+
         this.initializeEvents()
     }
     initializeEvents() {
@@ -16,26 +17,21 @@ class PricingComponent {
         const json = await this.changeValue()
         const filterJson = this.filterJson(json)
         const selectOption = this.select.value;
-
         this.changePrices(filterJson, selectOption)
-
     }
-
 
     async changeValue() {
         try {
             const request = await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json')
-
             try {
                 const json = await request.json()
                 return json
             } catch (err) {
-                console.log(err)
+                console.log(ApiErrors.getJsonError())
             }
         } catch (err) {
-            console.log(err)
+            console.log(ApiErrors.getServerError())
         }
-
     }
     filterJson(data) {
         return {
