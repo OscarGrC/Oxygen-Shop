@@ -1090,6 +1090,49 @@
   border-radius: 40px;
 }
 
+.slider {
+  text-align: center;
+  background-color: black;
+  position: relative;
+}
+.slider__img {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  max-width: 90%;
+}
+.slider__back {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.slider__next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  width: 50px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.slider__perls {
+  position: absolute;
+  left: 45%;
+  bottom: 3%;
+  background-color: transparent;
+}
+.slider__perls__dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: grey;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
 body {
   min-width: 320px;
 }

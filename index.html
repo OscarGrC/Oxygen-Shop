@@ -270,11 +270,15 @@
     </section>
     <!--Slider-->
     <div id="slider" class="slider">
-        <img class="slider__img" src="resources/slider1.jpg" />
-        <img class="slider__back" src="resources/Sliderback.png" />
-        <img class="slider__next" src="resources/Slidernext.png" />
-        <div class="slider_perls">
-
+        <img class="slider__img" id="sliderImg" src="resources/slider0.jpg" />
+        <img class="slider__back" id="backBtn" src="resources/Sliderback.png" />
+        <img class="slider__next" id="nextBtn" src="resources/Slidernext.png" />
+        <div class="slider__perls">
+            <span class="slider__perls__dot" id="perl0"></span>
+            <span class="slider__perls__dot" id="perl1"></span>
+            <span class="slider__perls__dot" id="perl2"></span>
+            <span class="slider__perls__dot" id="perl3"></span>
+            <span class="slider__perls__dot" id="perl4"></span>
         </div>
     </div>
     <!--Formulario-->
@@ -335,6 +339,7 @@
     <script type="module" src="js/Components/form-component.js"></script>
     <script type="module" src="js/Components/pricing-component.js"></script>
     <script type="module" src="js/Components/popUp-component.js"></script>
+    <script type="module" src="js/Components/slider-component.js"></script>
 </body>
 <!--Footer-->
 <footer class="footerPage">
