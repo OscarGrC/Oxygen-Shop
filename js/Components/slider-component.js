@@ -27,7 +27,7 @@ class SliderComponent {
     initializeEvents() {
         this.nextButton.addEventListener('click', () => this.nextImg())
         this.backButton.addEventListener('click', () => this.backImg())
-        window.addEventListener('scroll', () => this.updateProgressBar())
+
         this.automaticNext()
     }
 

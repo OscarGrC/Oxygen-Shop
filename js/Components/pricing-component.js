@@ -40,7 +40,6 @@ class PricingComponent {
         };
     }
     changePrices(filterJson, selectOption) {
-        console.log(filterJson, selectOption)
         switch (selectOption) {
             case "Eur": {
                 this.basicPrice.textContent = "0€"
@@ -49,7 +48,6 @@ class PricingComponent {
                 break;
             }
             case "Usd": {
-                console.log("dentro de dolar")
                 let pricePremiun = (filterJson.usd * 60).toFixed(2)
                 let pricePro = (filterJson.usd * 25).toFixed(2)
                 this.basicPrice.textContent = "$0"

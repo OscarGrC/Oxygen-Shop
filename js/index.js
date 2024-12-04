@@ -1,0 +1,6 @@
+const formComponent = new FormComponent()
+const goToTop = new GoToTop()
+const navbar = new NavBarComponent()
+const popUp = new PopUpComponent()
+const pricing = new PricingComponent()
+const slider = new SliderComponent("slider")

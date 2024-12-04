@@ -1,4 +1,4 @@
-import { calculateScrollPosition } from '../Utils/utils.js';
+import { calculateScrollPosition } from '../Utils/scrollPosition.js';
 import { EmailValidator } from "../Validators/email-validator.js"
 import { PopUpErrors } from "../Errors/popUp-errors.js"
 class PopUpComponent {

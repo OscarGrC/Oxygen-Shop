@@ -6,14 +6,21 @@
     &__img {
         margin-top: 2em;
         margin-bottom: 4em;
-        max-width: 90%;
+        width: 90%;
+        height: 400px;
+        object-fit: cover;
+
+        @media only screen and (min-width:1000px) {
+            height: 600px;
+        }
     }
 
     &__back {
         position: absolute;
         left: 5%;
         top: 50%;
-        width: 50px background-color: transparent;
+        width: 50px;
+        background-color: transparent;
         cursor: pointer;
     }
 
@@ -28,9 +35,13 @@
 
     &__perls {
         position: absolute;
-        left: 45%;
+        left: 30%;
         bottom: 3%;
         background-color: transparent;
+
+        @media only screen and (min-width:1000px) {
+            left: 45%;
+        }
 
         &__dot {
             display: inline-block;

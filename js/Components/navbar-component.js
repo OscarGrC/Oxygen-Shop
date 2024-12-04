@@ -1,4 +1,4 @@
-import { calculateScrollPosition } from '../Utils/utils.js';
+import { calculateScrollPosition } from '../Utils/scrollPosition.js';
 class NavBarComponent {
     constructor() {
         //Elementos DOM 
