@@ -1,5 +1,3 @@
-import { calculateScrollPosition } from '../Utils/scrollPosition.js';
-
 class GoToTop {
     constructor() {
         this.buttonToTop = document.getElementById('goToTop');
@@ -34,4 +32,3 @@ class GoToTop {
     }
 }
 
-const goToTop = new GoToTop();

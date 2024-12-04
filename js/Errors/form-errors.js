@@ -1,4 +1,4 @@
-export class FormErrors {
+class FormErrors {
     getNameError() {
         return "La longitud tiene que ser de 2 a 100.";
     }

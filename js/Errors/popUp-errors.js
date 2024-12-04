@@ -1,4 +1,4 @@
-export class PopUpErrors {
+class PopUpErrors {
     getEmailError() {
         return "Correo incorrecto.";
     }

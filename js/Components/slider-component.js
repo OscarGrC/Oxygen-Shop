@@ -67,4 +67,3 @@ class SliderComponent {
     }
 }
 
-const slider = new SliderComponent("slider");

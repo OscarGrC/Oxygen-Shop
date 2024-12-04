@@ -1,6 +1,4 @@
-import { calculateScrollPosition } from '../Utils/scrollPosition.js';
-import { EmailValidator } from "../Validators/email-validator.js"
-import { PopUpErrors } from "../Errors/popUp-errors.js"
+
 class PopUpComponent {
     constructor() {
         //Elementos DOM 
@@ -78,5 +76,3 @@ class PopUpComponent {
         this.close()
     }
 }
-
-const popUp = new PopUpComponent();

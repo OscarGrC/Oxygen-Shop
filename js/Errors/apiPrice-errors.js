@@ -1,4 +1,4 @@
-export class ApiErrors {
+class ApiErrors {
     getServerError() {
         return "Error en el servidor ";
     }

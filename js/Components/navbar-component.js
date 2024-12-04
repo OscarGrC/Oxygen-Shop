@@ -1,4 +1,4 @@
-import { calculateScrollPosition } from '../Utils/scrollPosition.js';
+
 class NavBarComponent {
     constructor() {
         //Elementos DOM 
@@ -24,5 +24,3 @@ class NavBarComponent {
         progressBar.style.width = scrollActualPosition + '%';
     }
 }
-
-const navbar = new NavBarComponent();

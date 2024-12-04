@@ -1,6 +1,3 @@
-import { FormValidator } from "../Validators/form-validator.js"
-import { FormErrors } from "../Errors/form-errors.js"
-
 class FormComponent {
     constructor() {
         // Elementos DOM
@@ -73,4 +70,4 @@ class FormComponent {
     }
 }
 
-const formComponent = new FormComponent()
+

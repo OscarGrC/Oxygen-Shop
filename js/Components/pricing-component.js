@@ -1,4 +1,4 @@
-import { ApiErrors } from "../Errors/apiPrice-errors.js"
+
 class PricingComponent {
     constructor() {
         //Elementos DOM 
@@ -68,4 +68,3 @@ class PricingComponent {
     }
 }
 
-const pricing = new PricingComponent();
