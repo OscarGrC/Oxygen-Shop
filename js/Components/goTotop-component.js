@@ -25,8 +25,12 @@ class GoToTop {
 
     visibility() {
         const scrollPosition = calculateScrollPosition();
-        const buttonToTop = this.buttonToTop;
-        buttonToTop.style.display = (scrollPosition > 25) ? 'block' : 'none';
+        if (scrollPosition >= 25) {
+            this.buttonToTop.classList.add('goToTop__showElement')
+        } else {
+            this.buttonToTop.classList.remove('goToTop__showElement')
+        }
+
     }
 }
 

@@ -1,9 +1,9 @@
 export class FormValidator {
 
-    constructor(form) {
-        this.name = form.name
-        this.email = form.email
-        this.isCheck = form.isCheck
+    constructor(name, email, isCheck) {
+        this.name = name
+        this.email = email
+        this.isCheck = isCheck
     }
 
     isValidName() {

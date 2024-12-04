@@ -242,4 +242,11 @@
         }
     }
 
+    &__showElement {
+        visibility: visible;
+    }
+
+    &__checkboxErr {
+        border: 2px solid red
+    }
 }

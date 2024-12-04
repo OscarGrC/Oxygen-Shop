@@ -1,6 +1,5 @@
 .popUp {
     position: fixed;
-    ////
     display: none;
     left: 15%;
     top: 25%;
@@ -8,6 +7,14 @@
     border-radius: 12px;
     overflow: hidden;
     z-index: 4;
+
+    &__showElement {
+        display: block;
+    }
+
+    &__showErr {
+        visibility: visible !important;
+    }
 
     @media only screen and (min-width:1000px) {
         left: 40%;

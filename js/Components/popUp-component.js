@@ -37,11 +37,11 @@ class PopUpComponent {
     }
 
     close() {
-        this.popUp.style.display = 'none'
+        this.popUp.classList.remove('popUp__showElement')
     }
 
     open() {
-        this.popUp.style.display = 'block'
+        this.popUp.classList.add('popUp__showElement')
         sessionStorage.setItem('popUp', 'true')
     }
     scrollEvent() {
@@ -54,10 +54,10 @@ class PopUpComponent {
         const validator = new EmailValidator(this.popUpUserInput.value)
         if (validator.isValidEmail() === true) {
             this.send(this.popUpUserInput)
-            this.popUpError.style.visibility = 'hidden'
+            this.popUpError.classList.remove('popUp__showErr')
 
         } else {
-            this.popUpError.style.visibility = 'visible'
+            this.popUpError.classList.add('popUp__showErr')
             this.popUpError.textContent = this.porUpErrosCode.getEmailError()
         }
     }

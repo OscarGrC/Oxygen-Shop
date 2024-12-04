@@ -21,7 +21,7 @@ class SliderComponent {
             "resources/slider3.jpg",
             "resources/slider4.jpg"
         ]
-        this.perls[0].style.backgroundColor = "white"
+        this.perls[0].classList.add('slider__perls__active')
         this.initializeEvents()
     }
     initializeEvents() {
@@ -32,28 +32,32 @@ class SliderComponent {
     }
 
     nextImg() {
+        this.removeActivePerl(this.imgIndex)
         this.imgIndex++
         if (this.imgIndex >= this.imageRepository.length) {
             this.imgIndex = 0
         }
         this.actualImg.src = this.imageRepository[this.imgIndex]
-        this.selectPerl(this.imgIndex)
+        this.activePerl(this.imgIndex)
 
 
     }
 
     backImg() {
+        this.removeActivePerl(this.imgIndex)
         this.imgIndex--
         if (this.imgIndex < 0) {
             this.imgIndex = (this.imageRepository.length - 1)
         }
         this.actualImg.src = this.imageRepository[this.imgIndex]
-        this.selectPerl(this.imgIndex)
+        this.activePerl(this.imgIndex)
     }
 
-    selectPerl(index) {
-        this.perls.forEach((element, index) => element.style.backgroundColor = "grey")
-        this.perls[index].style.backgroundColor = "white";
+    activePerl(index) {
+        this.perls[index].classList.add('slider__perls__active')
+    }
+    removeActivePerl(index) {
+        this.perls[index].classList.remove('slider__perls__active')
     }
 
     automaticNext() {

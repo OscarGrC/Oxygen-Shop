@@ -26,7 +26,14 @@
         animation-iteration-count: 2;
     }
 
+    &__showElement {
+        display: block;
+    }
+
 }
+
+
+
 
 @keyframes vibrate {
     0% {

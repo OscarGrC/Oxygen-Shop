@@ -911,6 +911,12 @@
     right: 6%;
   }
 }
+.form__showElement {
+  visibility: visible;
+}
+.form__checkboxErr {
+  border: 2px solid red;
+}
 
 .footerPage {
   position: relative;
@@ -985,6 +991,9 @@
   animation: vibrate 0.2s ease-in-out;
   animation-iteration-count: 2;
 }
+.goToTop__showElement {
+  display: block;
+}
 
 @keyframes vibrate {
   0% {
@@ -1012,6 +1021,12 @@
   border-radius: 12px;
   overflow: hidden;
   z-index: 4;
+}
+.popUp__showElement {
+  display: block;
+}
+.popUp__showErr {
+  visibility: visible !important;
 }
 @media only screen and (min-width: 1000px) {
   .popUp {
@@ -1144,6 +1159,9 @@
   background-color: grey;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.slider__perls__active {
+  background-color: white;
 }
 
 body {

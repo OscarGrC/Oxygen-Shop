@@ -53,5 +53,11 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
+        &__active {
+            background-color: white;
+        }
     }
+
+
 }
