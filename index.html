@@ -302,7 +302,7 @@
         </div>
         <div class="form__inputLine form__inputLine--secondInput">
             <p class="form__inputLine__inputName">EMAIL</p>
-            <input class="form__inputLine__inputUserEmail">
+            <input class="form__inputLine__inputUserEmail" placeholder="oscargrc5@outlook.com">
             <p class="form__inputLine__error form__inputLine__error--email"></p>
         </div>
         <div class="form__consent">
@@ -320,7 +320,7 @@
     </section>
     <!--ReturnTopButton-->
     <button id="goToTop" class="goToTop">
-        <img class="goToTop__img" src="resources/up.png" alt="Subir" />
+        <img class="goToTop__img" src="resources/up-arrow.png" alt="Subir" />
     </button>
     <!--popUp-->
     <section class="popUp" id="popUp">
@@ -334,6 +334,8 @@
 
     <!--Scripts-->
     <script src="js/Utils/scrollPosition.js"></script>
+    <script src="js/Validators/email-validator.js"></script>
+    <script src="js/Validators/form-validator.js"></script>
     <script src="js/Errors/form-errors.js"></script>
     <script src="js/Errors/apiPrice-errors.js"></script>
     <script src="js/Errors/popUp-errors.js"></script>
@@ -343,7 +345,6 @@
     <script src="js/Components/pricing-component.js"></script>
     <script src="js/Components/popUp-component.js"></script>
     <script src="js/Components/slider-component.js"></script>
-
     <script src="js/index.js"></script>
 </body>
 <!--Footer-->
@@ -353,9 +354,12 @@
         <p class="footerPage__logoContainer__licent">© 2022 OXYGEN, All Rights Reserved</p>
     </div>
     <div class="footerPage__icons">
-        <img class="footerPage__icons__iconX" src="resources/x.png">
-        <img class="footerPage__icons__iconFace" src="resources/Facebook.png">
-
+        <a href="https://github.com/OscarGrC" target="_blank">
+            <img class="footerPage__icons__iconX" src="resources/github.png">
+        </a>
+        <a href="https://www.linkedin.com/in/oscar-gracia-176935251/" target="_blank">
+            <img class="footerPage__icons__iconFace" src="resources/linkedin.png">
+        </a>
     </div>
 
 </footer>

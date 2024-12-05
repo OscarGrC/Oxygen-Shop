@@ -1,4 +1,4 @@
-export class FormValidator {
+class FormValidator {
 
     constructor(name, email, isCheck) {
         this.name = name

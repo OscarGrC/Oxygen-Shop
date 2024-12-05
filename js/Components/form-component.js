@@ -20,6 +20,7 @@ class FormComponent {
         const isValidForm = this.formValidation(this.nameInput.value, this.emailInput.value, this.checkbox.checked)
         if (isValidForm) {
             this.formSend(this.nameInput.value, this.emailInput.value, this.checkbox.checked)
+            alert("Send, Thanks")
         }
     }
 

@@ -1,4 +1,4 @@
-export class EmailValidator {
+class EmailValidator {
 
     constructor(email) {
         this.email = email
