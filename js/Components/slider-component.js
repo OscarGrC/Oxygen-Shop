@@ -27,7 +27,7 @@ class SliderComponent {
     initializeEvents() {
         this.nextButton.addEventListener('click', () => this.nextImg())
         this.backButton.addEventListener('click', () => this.backImg())
-
+        this.perls.forEach((perl, index) => perl.addEventListener('click', () => this.perlChange(index)))
         this.automaticNext()
     }
 
@@ -64,6 +64,12 @@ class SliderComponent {
         setInterval(() => {
             this.nextImg();
         }, 5000);
+    }
+    perlChange(index) {
+        this.removeActivePerl(this.imgIndex)
+        this.imgIndex = index
+        this.actualImg.src = this.imageRepository[this.imgIndex]
+        this.activePerl(this.imgIndex)
     }
 }
 
